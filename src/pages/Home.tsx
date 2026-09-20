@@ -1,3 +1,4 @@
+import Img from '../components/Img'
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import YouTube from '../components/YouTube'
@@ -56,21 +57,23 @@ export default function Home() {
           <div className="relative lg:col-span-5">
             <Reveal delay={200} className="grid grid-cols-12 gap-3">
               <div className="img-zoom col-span-7 overflow-hidden">
-                <img
+                <Img
                   src="/images/portfolio/p10.webp"
                   alt="Chris Olave holding his Saints jersey at Parc des Princes"
                   width={1600}
                   height={1600}
                   className="aspect-[4/5] h-full w-full object-cover"
+                  loading="eager"
                   fetchPriority="high"
+                  sizes="(max-width: 1024px) 58vw, 24vw"
                 />
               </div>
               <div className="col-span-5 grid gap-3">
                 <div className="img-zoom overflow-hidden">
-                  <img src="/images/portfolio/p04.webp" alt="Kamaru Usman and Brittany Gilman on the ESPYS red carpet" width={1280} height={1600} className="aspect-[4/5] h-full w-full object-cover" />
+                  <Img src="/images/portfolio/p04.webp" alt="Kamaru Usman and Brittany Gilman on the ESPYS red carpet" width={1280} height={1600} loading="eager" sizes="(max-width: 1024px) 40vw, 16vw" className="aspect-[4/5] h-full w-full object-cover" />
                 </div>
                 <div className="img-zoom overflow-hidden">
-                  <img src="/images/portfolio/p09.webp" alt="Odell Beckham Jr. at the amfAR Gala in Cannes" width={408} height={612} className="aspect-[4/5] h-full w-full object-cover" />
+                  <Img src="/images/portfolio/p09.webp" alt="Odell Beckham Jr. at the amfAR Gala in Cannes" width={408} height={612} loading="eager" sizes="(max-width: 1024px) 40vw, 16vw" className="aspect-[4/5] h-full w-full object-cover" />
                 </div>
               </div>
             </Reveal>
@@ -167,7 +170,7 @@ export default function Home() {
               <Reveal key={s.slug} delay={i * 100}>
                 <Link to={`/services/${s.slug}`} className="group block">
                   <div className="img-zoom relative aspect-[4/5] overflow-hidden">
-                    <img src={s.image} alt={s.imageAlt} loading="lazy" className="h-full w-full object-cover" />
+                    <Img src={s.image} alt={s.imageAlt} loading="lazy" className="h-full w-full object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
                     <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
                       <p className="font-display text-sm font-semibold tracking-[0.2em] text-brand">0{i + 1}</p>
@@ -281,7 +284,7 @@ export default function Home() {
         <div className="container-x grid items-center gap-12 lg:grid-cols-12">
           <Reveal className="lg:col-span-5">
             <div className="img-zoom relative overflow-hidden">
-              <img src="/images/team/brittany-gilman.webp" alt="Brittany Gilman with Ezekiel Elliott" loading="lazy" className="aspect-[4/5] w-full object-cover" />
+              <Img src="/images/team/brittany-gilman.webp" alt="Brittany Gilman with Ezekiel Elliott" loading="lazy" className="aspect-[4/5] w-full object-cover" />
               <div className="absolute bottom-0 left-0 bg-brand px-5 py-3 text-white">
                 <p className="display text-2xl">Brittany Gilman, M.Ed</p>
                 <p className="text-xs uppercase tracking-[0.18em]">Founder & CEO</p>
@@ -346,7 +349,7 @@ function Testimonials() {
           “{t.quote}”
         </blockquote>
         <div className="mt-8 flex items-center gap-4">
-          <img src={t.image} alt={t.name} width={56} height={56} className="h-14 w-14 rounded-full object-cover grayscale" />
+          <Img src={t.image} alt={t.name} width={56} height={56} className="h-14 w-14 rounded-full object-cover grayscale" />
           <div>
             <p className="font-display text-xl font-bold uppercase">{t.name}</p>
             <p className="text-sm text-muted">{t.role}</p>

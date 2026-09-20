@@ -1,3 +1,4 @@
+import Img from '../components/Img'
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import { Cta, PageHeader } from '../components/ui'
@@ -25,7 +26,7 @@ export default function Services() {
               <Reveal key={s.slug} delay={(i % 3) * 80} className="bg-paper">
                 <Link to={`/services/${s.slug}`} className="group flex h-full flex-col p-6 transition-colors duration-500 hover:bg-ink hover:text-white sm:p-8">
                   <div className="img-zoom aspect-[4/3] overflow-hidden">
-                    <img src={s.image} alt={s.imageAlt} loading="lazy" className="h-full w-full object-cover" />
+                    <Img src={s.image} alt={s.imageAlt} loading="lazy" className="h-full w-full object-cover" />
                   </div>
                   <p className="mt-6 font-display text-sm font-semibold tracking-[0.2em] text-brand">{String(i + 1).padStart(2, '0')}</p>
                   <h2 className="display mt-2 text-3xl">{s.title}</h2>

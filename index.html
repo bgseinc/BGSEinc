@@ -15,12 +15,18 @@
     <meta property="og:image" content="/og-image.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@BGSportsEntInc" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/fonts/barlow-condensed-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      /* Critical: paint the brand background immediately so the page is never white while the app loads. */
+      html { background: #0a0a0a; }
+      #splash { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: #0a0a0a; }
+      #splash img { width: 140px; height: auto; animation: splash-pulse 1.4s ease-in-out infinite; }
+      @keyframes splash-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><div id="splash"><img src="/images/logo/logo-light.webp" alt="BG Sports Enterprises" width="419" height="279" /></div></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

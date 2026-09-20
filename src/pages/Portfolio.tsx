@@ -1,3 +1,4 @@
+import Img from '../components/Img'
 import { useState } from 'react'
 import Reveal from '../components/Reveal'
 import Lightbox from '../components/Lightbox'
@@ -29,7 +30,7 @@ export default function Portfolio() {
             {gallery.map((g, i) => (
               <Reveal key={g.src} delay={(i % 3) * 60}>
                 <button type="button" onClick={() => setLb(i)} className="img-zoom group relative block w-full overflow-hidden text-left">
-                  <img src={g.src} alt={g.alt} loading="lazy" width={g.w} height={g.h} className="w-full object-cover" />
+                  <Img src={g.src} alt={g.alt} loading="lazy" width={g.w} height={g.h} className="w-full object-cover" />
                   <span className="absolute inset-0 bg-gradient-to-t from-ink/80 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <span className="absolute inset-x-0 bottom-0 translate-y-3 p-5 font-display text-lg font-bold uppercase leading-tight text-white opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                     {g.caption}
@@ -97,7 +98,7 @@ export default function Portfolio() {
         <div className="mt-12 flex gap-4 overflow-x-auto px-5 pb-4 sm:px-8 lg:px-12 [scrollbar-width:thin]">
           {moments.map((m, i) => (
             <button key={m.src} type="button" onClick={() => setLb2(i)} className="img-zoom group relative w-[260px] shrink-0 overflow-hidden sm:w-[320px]">
-              <img src={m.src} alt={m.alt} loading="lazy" width={m.w} height={m.h} className="aspect-[4/5] w-full object-cover" />
+              <Img src={m.src} alt={m.alt} loading="lazy" width={m.w} height={m.h} className="aspect-[4/5] w-full object-cover" />
               <span className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/80 to-transparent p-4 pt-12 text-left font-display text-base font-bold uppercase text-white">
                 {m.caption}
               </span>

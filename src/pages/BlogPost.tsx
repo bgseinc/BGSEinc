@@ -1,3 +1,4 @@
+import Img from '../components/Img'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import Lightbox from '../components/Lightbox'
@@ -42,7 +43,7 @@ export default function BlogPost() {
         {post.cover && !coverIsRemote && (
           <div className="bg-ink">
             <div className="container-x">
-              <img src={post.cover} alt={post.coverAlt ?? ''} className="max-h-[80vh] w-full object-cover" />
+              <Img src={post.cover} alt={post.coverAlt ?? ''} loading="eager" sizes="100vw" className="max-h-[80vh] w-full object-cover" />
             </div>
           </div>
         )}
@@ -120,7 +121,7 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: { src: stri
       return (
         <figure>
           <button type="button" onClick={() => onOpen([{ src: block.src, alt: block.alt }], 0)} className="img-zoom block w-full overflow-hidden bg-paper-2">
-            <img src={block.src} alt={block.alt} loading="lazy" className="max-h-[80vh] w-full object-contain" />
+            <Img src={block.src} alt={block.alt} sizes="(max-width: 1024px) 100vw, 66vw" className="max-h-[80vh] w-full object-contain" />
           </button>
           {block.caption && <figcaption>{block.caption}</figcaption>}
         </figure>
@@ -130,7 +131,7 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: { src: stri
         <figure className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           {block.images.map((im, i) => (
             <button key={im.src} type="button" onClick={() => onOpen(block.images, i)} className="img-zoom aspect-[4/5] overflow-hidden bg-paper-2">
-              <img src={im.src} alt={im.alt} loading="lazy" className="h-full w-full object-cover" />
+              <Img src={im.src} alt={im.alt} loading="lazy" className="h-full w-full object-cover" />
             </button>
           ))}
         </figure>

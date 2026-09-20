@@ -1,3 +1,4 @@
+import Img from '../components/Img'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import Reveal from '../components/Reveal'
 import { Button, Cta, Eyebrow } from '../components/ui'
@@ -27,7 +28,7 @@ export default function ServiceDetail() {
           </div>
           <div className="lg:col-span-5">
             <div className="img-zoom aspect-[4/5] overflow-hidden">
-              <img src={s.image} alt={s.imageAlt} className="h-full w-full object-cover" />
+              <Img src={s.image} alt={s.imageAlt} loading="eager" sizes="(max-width: 1024px) 100vw, 40vw" className="h-full w-full object-cover" />
             </div>
           </div>
         </div>

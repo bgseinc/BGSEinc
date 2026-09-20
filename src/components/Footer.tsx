@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-ink text-white">
       <div className="container-x grid gap-12 py-16 md:grid-cols-12 md:py-20">
         <div className="md:col-span-5">
-          <img src="/images/logo/logo-light.png" alt="BG Sports Enterprises" width={419} height={279} className="h-16 w-auto" />
+          <img src="/images/logo/logo-light.webp" alt="BG Sports Enterprises" width={419} height={279} className="h-16 w-auto" />
           <p className="mt-6 max-w-sm text-white/60">
             {site.tagline}. {site.slogan} Building globally since {site.founded} from {site.hubs.join(' and ')}.
           </p>

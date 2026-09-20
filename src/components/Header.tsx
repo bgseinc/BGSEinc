@@ -36,7 +36,7 @@ export default function Header() {
         <div className={`container-x flex items-center justify-between transition-all duration-500 ${scrolled ? 'py-3' : 'py-5'}`}>
           <Link to="/" onClick={close} className="flex items-center" aria-label="BG Sports Enterprises home">
             <img
-              src="/images/logo/logo-light.png"
+              src="/images/logo/logo-light.webp"
               alt="BG Sports Enterprises"
               width={419}
               height={279}

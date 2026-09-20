@@ -29,6 +29,12 @@ npm run lint
 | `public/images/**` | Optimized WebP assets (≤1600px) converted from the old site |
 | `raw-assets/` | Original downloads (git-ignored) |
 
+## Performance notes
+
+- Fonts are self-hosted in `public/fonts` (declared in `src/fonts.css`). Do not reintroduce a render-blocking Google Fonts `<link>`: on slow or filtered mobile networks it can hold the page on a blank screen until the request times out.
+- `index.html` paints a dark splash with the logo before JavaScript runs; React replaces it on mount.
+- Content images go through `src/components/Img.tsx`, which serves `-640` / `-1000` WebP variants via `srcset`. Available widths live in the generated `src/data/imageSizes.ts`. When adding an image to `public/images`, create the two variants and add its entry there (or regenerate both with the PIL snippet in git history).
+
 Brand tokens are defined in `src/index.css` under `@theme`: red `#f80000` (sampled from the logo), ink `#0a0a0a`, display font Barlow Condensed, body font Inter.
 
 ## Contact form

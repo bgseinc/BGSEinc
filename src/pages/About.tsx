@@ -1,3 +1,4 @@
+import Img from '../components/Img'
 import Reveal from '../components/Reveal'
 import { Button, Cta, Eyebrow, PageHeader, SectionHead } from '../components/ui'
 import { clients, team } from '../data/people'
@@ -82,7 +83,7 @@ export default function About() {
             {team.map((m, i) => (
               <Reveal key={m.name} delay={i * 100}>
                 <div className="img-zoom aspect-[4/5] overflow-hidden bg-paper-2">
-                  <img src={m.image} alt={m.name} loading="lazy" className="h-full w-full object-cover" />
+                  <Img src={m.image} alt={m.name} loading="lazy" className="h-full w-full object-cover" />
                 </div>
                 <p className="mt-6 font-display text-sm font-semibold uppercase tracking-[0.2em] text-brand">{m.role}</p>
                 <h3 className="display mt-1 text-3xl">{m.name}</h3>
