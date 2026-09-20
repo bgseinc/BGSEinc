@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Original downloaded assets (optimized copies live in public/images)
+raw-assets

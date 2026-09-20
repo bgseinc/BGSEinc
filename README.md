@@ -1,75 +1,42 @@
-# React + TypeScript + Vite
+# BG Sports Enterprises Inc. — bgseinc.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern rebuild of [bgseinc.com](https://bgseinc.com), the site of BG Sports Enterprises Inc. (BGSE), an international sports branding agency founded in 2007 by Brittany Gilman.
 
-Currently, two official plugins are available:
+Built with **Vite + React 19 + TypeScript + Tailwind CSS v4 + React Router 7**. No backend: it is a static single-page app.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run it
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # type-check + production build to dist/
+npm run preview   # serve dist/ locally
+npm run lint
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Where things live
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Path | What |
+|---|---|
+| `src/data/site.ts` | Name, tagline, nav, social links, contact email, stats, arenas, pillars |
+| `src/data/services.ts` | The 12 services (cards + detail-page copy, pulled from the old site) |
+| `src/data/posts.ts` | Journal/blog posts as structured blocks, plus the 2013–2020 archive list |
+| `src/data/portfolio.ts` | Work gallery, "moments" strip, international events |
+| `src/data/people.ts` | Testimonials, team, client list |
+| `src/data/videos.ts` | YouTube video IDs from the BGSE channel |
+| `src/pages/*` | Home, Services, ServiceDetail, Portfolio, About, Blog, BlogPost, Contact, NotFound |
+| `src/components/*` | Header, Footer, Reveal (scroll animation), YouTube (click-to-load embed), Lightbox, PostCard, UI primitives |
+| `public/images/**` | Optimized WebP assets (≤1600px) converted from the old site |
+| `raw-assets/` | Original downloads (git-ignored) |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Brand tokens are defined in `src/index.css` under `@theme`: red `#f80000` (sampled from the logo), ink `#0a0a0a`, display font Barlow Condensed, body font Inter.
 
-```
+## Contact form
+
+`src/data/site.ts` has `contactEmail` and an optional `formEndpoint` (read from `VITE_CONTACT_ENDPOINT`). With an endpoint set (Formspree, Basin, etc.) the form POSTs JSON; without one it opens the visitor's email client with the message pre-filled.
+
+Create a `.env` with `VITE_CONTACT_ENDPOINT=https://...` to enable the hosted form.
+
+## Deploy
+
+Static output in `dist/`. SPA rewrites are included for Vercel (`vercel.json`) and Netlify (`public/_redirects`). `public/sitemap.xml` and `robots.txt` are included; regenerate the sitemap when adding services or posts.
