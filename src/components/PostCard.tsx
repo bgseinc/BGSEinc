@@ -16,7 +16,7 @@ export default function PostCard({ post, large = false }: { post: Post; large?: 
             <p className="display text-4xl text-white/90">{post.category}</p>
           </div>
         )}
-        <span className="absolute left-4 top-4 bg-brand px-3 py-1 font-display text-xs font-bold uppercase tracking-[0.14em] text-white">
+        <span className="absolute left-4 top-4 bg-brand px-3 py-1 font-display text-xs font-bold uppercase tracking-[0.14em] text-ink">
           {post.category}
         </span>
       </div>

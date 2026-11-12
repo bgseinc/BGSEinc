@@ -72,7 +72,7 @@ export default function Contact() {
                 {site.socials.map((s) => {
                   const Icon = socialIcon[s.icon]
                   return (
-                    <a key={s.href} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label} className="inline-flex h-12 w-12 items-center justify-center border border-line text-ink transition-colors hover:border-brand hover:bg-brand hover:text-white">
+                    <a key={s.href} href={s.href} target="_blank" rel="noreferrer" aria-label={s.label} className="inline-flex h-12 w-12 items-center justify-center border border-line text-ink transition-colors hover:border-brand hover:bg-brand hover:text-ink">
                       <Icon width={20} height={20} />
                     </a>
                   )

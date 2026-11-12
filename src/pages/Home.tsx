@@ -285,7 +285,7 @@ export default function Home() {
           <Reveal className="lg:col-span-5">
             <div className="img-zoom relative overflow-hidden">
               <Img src="/images/team/brittany-gilman.webp" alt="Brittany Gilman with Ezekiel Elliott" loading="lazy" className="aspect-[4/5] w-full object-cover" />
-              <div className="absolute bottom-0 left-0 bg-brand px-5 py-3 text-white">
+              <div className="absolute bottom-0 left-0 bg-brand px-5 py-3 text-ink">
                 <p className="display text-2xl">Brittany Gilman, M.Ed</p>
                 <p className="text-xs uppercase tracking-[0.18em]">Founder & CEO</p>
               </div>

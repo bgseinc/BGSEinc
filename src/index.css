@@ -2,18 +2,19 @@
 @import "./fonts.css";
 
 @theme {
-  --color-brand: #f80000;
-  --color-brand-dark: #c40000;
-  --color-brand-soft: #ffe5e5;
-  --color-ink: #0a0a0a;
-  --color-ink-2: #121212;
-  --color-ink-3: #1c1c1c;
-  --color-line-dark: #2a2a2a;
+  /* Palette sampled from the BG Sports Enterprises logo */
+  --color-brand: #4daa91;
+  --color-brand-dark: #3f9079;
+  --color-brand-soft: #e1f2ed;
+  --color-ink: #0d1714;
+  --color-ink-2: #12201b;
+  --color-ink-3: #1a2f28;
+  --color-line-dark: #264038;
   --color-paper: #ffffff;
-  --color-paper-2: #f5f4f2;
-  --color-line: #e5e5e5;
-  --color-muted: #6b6b6b;
-  --color-muted-dark: #a3a3a3;
+  --color-paper-2: #f2f6f4;
+  --color-line: #e1e8e5;
+  --color-muted: #5e6b66;
+  --color-muted-dark: #a3b0ab;
 
   --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
@@ -33,7 +34,7 @@
   }
   ::selection {
     background: var(--color-brand);
-    color: #fff;
+    color: var(--color-ink);
   }
   img {
     @apply max-w-full;

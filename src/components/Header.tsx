@@ -60,7 +60,7 @@ export default function Header() {
             ))}
             <Link
               to="/contact"
-              className="font-display bg-brand px-5 py-2.5 text-sm font-bold uppercase tracking-[0.1em] transition-colors hover:bg-white hover:text-ink"
+              className="font-display bg-brand px-5 py-2.5 text-ink text-sm font-bold uppercase tracking-[0.1em] transition-colors hover:bg-white hover:text-ink"
             >
               Let’s talk
             </Link>

@@ -22,7 +22,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={s.label}
-                  className="inline-flex h-11 w-11 items-center justify-center border border-white/15 transition-colors hover:border-brand hover:bg-brand hover:text-white"
+                  className="inline-flex h-11 w-11 items-center justify-center border border-white/15 transition-colors hover:border-brand hover:bg-brand hover:text-ink"
                 >
                   <Icon width={20} height={20} />
                 </a>

@@ -31,7 +31,7 @@ export default function BlogPost() {
               ← Journal
             </Link>
             <div className="mt-8 flex flex-wrap items-center gap-4 text-xs uppercase tracking-[0.18em] text-white/60">
-              <span className="bg-brand px-3 py-1 font-display text-xs font-bold text-white">{post.category}</span>
+              <span className="bg-brand px-3 py-1 font-display text-xs font-bold text-ink">{post.category}</span>
               <span>{formatDate(post.date)}</span>
               {post.location && <span>· {post.location}</span>}
             </div>
@@ -145,7 +145,7 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: { src: stri
     case 'cta':
       return (
         <p className="mt-8">
-          <a href={block.href} target="_blank" rel="noreferrer" className="group inline-flex items-center gap-3 bg-brand px-6 py-3 font-display text-base font-bold uppercase tracking-[0.08em] !text-white !no-underline transition-colors hover:bg-brand-dark">
+          <a href={block.href} target="_blank" rel="noreferrer" className="group inline-flex items-center gap-3 bg-brand px-6 py-3 font-display text-base font-bold uppercase tracking-[0.08em] !text-ink !no-underline transition-colors hover:bg-brand-dark">
             {block.label}
             <ArrowUpRight width={18} height={18} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </a>

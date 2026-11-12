@@ -14,10 +14,10 @@ type ButtonProps = {
 }
 
 const variants = {
-  primary: 'bg-brand text-white hover:bg-brand-dark',
+  primary: 'bg-brand text-ink hover:bg-brand-dark',
   outline: 'border border-white/30 text-white hover:border-white hover:bg-white hover:text-ink',
   ghost: 'border border-ink/20 text-ink hover:border-ink hover:bg-ink hover:text-white',
-  white: 'bg-white text-ink hover:bg-brand hover:text-white',
+  white: 'bg-white text-ink hover:bg-ink hover:text-white',
 }
 
 export function Button({ to, href, children, variant = 'primary', className = '', size = 'md', type = 'button', disabled }: ButtonProps) {
@@ -88,10 +88,10 @@ export function PageHeader({ eyebrow, title, text, children }: { eyebrow: string
 
 export function Cta({ light = false }: { light?: boolean }) {
   return (
-    <section className={`${light ? 'bg-paper-2 text-ink' : 'bg-brand text-white'} relative overflow-hidden`}>
+    <section className={`${light ? 'bg-paper-2 text-ink' : 'bg-brand text-ink'} relative overflow-hidden`}>
       <div className="container-x flex flex-col items-start justify-between gap-10 py-20 sm:py-28 lg:flex-row lg:items-end">
         <div>
-          <p className={`eyebrow ${light ? 'text-muted' : 'text-white/80'}`}>Ready to do this?</p>
+          <p className={`eyebrow ${light ? 'text-muted' : 'text-ink/70'}`}>Ready to do this?</p>
           <h2 className="display mt-4 text-[clamp(3rem,9vw,8rem)]">
             Let’s get <br className="hidden sm:block" /> to work.
           </h2>
@@ -100,7 +100,7 @@ export function Cta({ light = false }: { light?: boolean }) {
           <Button to="/contact" variant={light ? 'primary' : 'white'} size="lg">
             Contact us
           </Button>
-          <Button to="/services" variant={light ? 'ghost' : 'outline'} size="lg">
+          <Button to="/services" variant="ghost" size="lg">
             Our services
           </Button>
         </div>
