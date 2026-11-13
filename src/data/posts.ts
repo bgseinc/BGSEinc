@@ -26,6 +26,120 @@ const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
 
 export const posts: Post[] = [
   {
+    slug: 'nfl-in-paris-sport-is-global-culture-is-universal',
+    title: 'NFL in Paris: Sport Is Global. Culture Is Universal.',
+    date: '2026-11-10',
+    category: 'International',
+    location: 'Paris, France',
+    tags: ['NFL Paris', 'Saints', 'PSG', 'Steelers'],
+    excerpt:
+      'The NFL’s arrival in Paris was more than a game. It was a historic moment that brought sport, fashion, art, entertainment and culture together on an international stage.',
+    blocks: [
+      {
+        type: 'p',
+        html: 'The NFL’s arrival in Paris was more than a game. It was a historic moment that brought sport, fashion, art, entertainment and culture together on an international stage.',
+      },
+      { type: 'h2', text: 'A first for France' },
+      {
+        type: 'p',
+        html: 'On Sunday, October 25, 2026, the Pittsburgh Steelers and New Orleans Saints met at the Stade de France, the <a href="https://www.tsn.ca/nfl/article/nfl-eyes-big-debut-in-paris-as-steelers-saints-game-comes-amid-security-concerns/" target="_blank" rel="noreferrer">first NFL regular-season game ever played in France</a>. The league built a full week around it, including an NFL House and fan events across the city, and the game aired free-to-air on French television.',
+      },
+      {
+        type: 'p',
+        html: 'For the league, Paris was about more than the 82,000-seat stadium. It was a chance to meet a new audience on its own terms, through the city’s fashion, music and football culture.',
+      },
+      { type: 'h2', text: 'Saints x PSG: two cities, one fleur-de-lis' },
+      {
+        type: 'p',
+        html: 'The most visible cultural crossover was the <a href="https://www.neworleanssaints.com/news/new-orleans-saints-paris-saint-germain-partnership-nfl-france-psg-merchandise-collection" target="_blank" rel="noreferrer">Saints x Paris Saint-Germain partnership</a>. Built around the fleur-de-lis, a symbol that belongs to both New Orleans and France, it paired a capsule collection developed with Fanatics with a week of fan, community and cultural events.',
+      },
+      {
+        type: 'p',
+        html: 'PSG’s own <a href="https://www.psg.fr/en/content/pr_nfl_football_is_football" target="_blank" rel="noreferrer">“Football is football” collection</a> added Nike-made NFL jerseys in Red and Blue and Monogram editions, plus an original piece of music and a free talk at the NFL House. It treated football as a shared starting point for athletes, musicians and creators in the city.',
+      },
+      { type: 'h2', text: 'Jeff Hamilton x NFL x Casa Blanca' },
+      {
+        type: 'p',
+        html: 'Fashion had its own moment in the Jeff Hamilton x NFL x Casa Blanca event, a reminder that football and style have long shared a language.',
+      },
+      { type: 'h2', text: 'An exclusive moment you haven’t seen yet' },
+      {
+        type: 'p',
+        html: 'There was also an exclusive event produced by BG Sports Enterprises Inc. during the week, and it hasn’t been shared publicly until now. Follow along for a first look.',
+      },
+      { type: 'h2', text: 'Where sport and culture meet' },
+      {
+        type: 'p',
+        html: 'From the Saints x PSG collaboration to the fashion events and everything in between, Paris showed how sport keeps creating chances for cultural exchange and connection. It was a historic moment for the NFL, and another sign of how closely sports and global culture are now intertwined.',
+      },
+      { type: 'p', html: '<strong>Sport is global. Culture is universal.</strong>' },
+      {
+        type: 'p',
+        html: '<strong>Sources:</strong> <a href="https://www.tsn.ca/nfl/article/nfl-eyes-big-debut-in-paris-as-steelers-saints-game-comes-amid-security-concerns/" target="_blank" rel="noreferrer">TSN</a> · <a href="https://www.neworleanssaints.com/news/new-orleans-saints-paris-saint-germain-partnership-nfl-france-psg-merchandise-collection" target="_blank" rel="noreferrer">New Orleans Saints</a> · <a href="https://www.psg.fr/en/content/pr_nfl_football_is_football" target="_blank" rel="noreferrer">Paris Saint-Germain</a>',
+      },
+    ],
+  },
+  {
+    slug: 'emsculpt-neo-athlete-recovery-longevity-lounge-x-games-aspen-2026',
+    title: 'Recovery at Altitude: Inside the Emsculpt Neo Athlete Recovery & Longevity Lounge at X Games Aspen 2026',
+    date: '2026-11-10',
+    category: 'Activations',
+    location: 'Aspen, CO',
+    tags: ['X Games', 'BTL', 'Emsculpt Neo', 'Recovery'],
+    excerpt:
+      'A look back at the BTL Emsculpt Neo Athlete Recovery & Longevity Lounge, which BGSE Inc. produced during X Games Aspen 2026.',
+    blocks: [
+      {
+        type: 'p',
+        html: 'As winter settles in and the snow season gets going, we’re looking back at one of our favorite activations: the BTL Emsculpt Neo Athlete Recovery &amp; Longevity Lounge, which BGSE Inc. produced during X Games Aspen 2026.',
+      },
+      { type: 'h2', text: 'A private reset space in the middle of competition week' },
+      {
+        type: 'p',
+        html: 'X Games Aspen is built around big air, big crowds and big days of competition. Between those days, athletes need somewhere quiet to step off the mountain. That was the idea behind the Athlete Recovery &amp; Longevity Lounge, an invite-only space created exclusively for X Games athletes and presented by BTL’s Emsculpt Neo, an official X Games partner.',
+      },
+      {
+        type: 'p',
+        html: 'The lounge ran Friday, January 23 through Sunday, January 25, from 10:00 AM to 5:30 PM each day, in the Capitol Room at the St. Regis Hotel &amp; Spa in Aspen, Colorado. Athletes could stop by, reset and recover between competition days in a private, athlete-first environment, with Emsculpt Neo treatments designed to support muscle recovery, strength and performance.',
+      },
+      {
+        type: 'p',
+        html: 'BGSE Inc. produced the activation from concept through execution. Our goal was simple: make it easy for athletes to say yes, and make the space feel as considered as the athletes who walked through it.',
+      },
+      { type: 'h2', text: 'The athletes we hosted' },
+      { type: 'p', html: 'We were proud to welcome ten athletes into the lounge over the weekend:' },
+      {
+        type: 'ul',
+        items: [
+          'JJ Thomas',
+          'Lucas Foster',
+          'Kenny Stills (NFL)',
+          'Dane Menzies',
+          'Jason Woole',
+          'Darcy Sharpe',
+          'Jamie Anderson',
+          'Tyler Nicholson',
+          'Luca Harrington',
+          'Birk Rudd',
+        ],
+      },
+      { type: 'p', html: 'Thank you to each of them for taking time out of a packed competition schedule to stop in.' },
+      { type: 'h2', text: 'Why activations like this work' },
+      {
+        type: 'p',
+        html: 'The best brand moments at major sporting events meet athletes where they already are. At X Games, that means giving them something useful during the hours between runs, in a setting that respects their time and privacy. A recovery lounge does that, and it lets a partner like BTL show up as a genuine part of the athlete experience.',
+      },
+      {
+        type: 'p',
+        html: 'That’s the approach we bring to every project at BGSE: build the experience around the athlete first, and the brand story follows.',
+      },
+      {
+        type: 'p',
+        html: 'Planning an activation for the winter season or beyond? <a href="/contact">Get in touch with BGSE Inc.</a> and let’s talk about what we can build together.',
+      },
+    ],
+  },
+  {
     slug: 'brittany-gilman-releases-new-sports-business-book',
     title: 'Brittany Gilman releases “No Stilettos on the Field”',
     date: '2026-04-29',
