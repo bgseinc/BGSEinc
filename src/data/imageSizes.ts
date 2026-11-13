@@ -413,5 +413,45 @@ export const imageSizes: Record<string, number[]> = {
 ],
 "/images/testimonials/tarell-brown.webp": [
 150
+],
+"/images/blog/xgames-aspen/1.webp": [
+640,
+1000,
+1069
+],
+"/images/blog/xgames-aspen/2.webp": [
+640,
+1000,
+1069
+],
+"/images/blog/xgames-aspen/3.webp": [
+640,
+1000,
+1069
+],
+"/images/blog/xgames-aspen/5.webp": [
+640,
+1000,
+1069
+],
+"/images/blog/xgames-aspen/6.webp": [
+640,
+1000,
+1600
+],
+"/images/blog/xgames-aspen/7.webp": [
+640,
+1000,
+1200
+],
+"/images/blog/xgames-aspen/8.webp": [
+640,
+1000,
+1200
+],
+"/images/blog/xgames-aspen/9.webp": [
+640,
+1000,
+1206
 ]
 }

@@ -3,7 +3,7 @@ export type Block =
   | { type: 'h2'; text: string }
   | { type: 'h3'; text: string }
   | { type: 'img'; src: string; alt: string; caption?: string }
-  | { type: 'gallery'; images: { src: string; alt: string }[] }
+  | { type: 'gallery'; images: { src: string; alt: string; caption?: string }[] }
   | { type: 'quote'; text: string; cite?: string }
   | { type: 'ul'; items: string[] }
   | { type: 'video'; id: string; title: string }
@@ -25,6 +25,84 @@ export type Post = {
 const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
 
 export const posts: Post[] = [
+  {
+    slug: 'emsculpt-neo-athlete-recovery-longevity-lounge-x-games-aspen-2026',
+    title: 'Recovery at Altitude: Inside the Emsculpt Neo Athlete Recovery & Longevity Lounge at X Games Aspen 2026',
+    date: '2026-11-10',
+    category: 'Activations',
+    location: 'Aspen, CO',
+    tags: ['X Games', 'BTL', 'Emsculpt Neo', 'Recovery'],
+    excerpt:
+      'A look back at the BTL Emsculpt Neo Athlete Recovery & Longevity Lounge, which BGSE Inc. produced during X Games Aspen 2026.',
+    cover: '/images/blog/xgames-aspen/1.webp',
+    coverAlt: 'Dr. Jonathan Schoeff with an athlete receiving an Emsculpt Neo treatment in the Athlete Recovery & Longevity Lounge at X Games Aspen',
+    blocks: [
+      {
+        type: 'p',
+        html: 'As winter settles in and the snow season gets going, we’re looking back at one of our favorite activations: the BTL Emsculpt Neo Athlete Recovery &amp; Longevity Lounge, which BGSE Inc. produced during X Games Aspen 2026.',
+      },
+      { type: 'h2', text: 'A private reset space in the middle of competition week' },
+      {
+        type: 'p',
+        html: 'X Games Aspen is built around big air, big crowds and big days of competition. Between those days, athletes need somewhere quiet to step off the mountain. That was the idea behind the Athlete Recovery &amp; Longevity Lounge, an invite-only space created exclusively for X Games athletes and presented by BTL’s Emsculpt Neo, an official X Games partner.',
+      },
+      {
+        type: 'p',
+        html: 'The lounge ran Friday, January 23 through Sunday, January 25, from 10:00 AM to 5:30 PM each day, in the Capitol Room at the St. Regis Hotel &amp; Spa in Aspen, Colorado. Athletes could stop by, reset and recover between competition days in a private, athlete-first environment, with Emsculpt Neo treatments designed to support muscle recovery, strength and performance.',
+      },
+      {
+        type: 'p',
+        html: 'BGSE Inc. produced the activation from concept through execution. Our goal was simple: make it easy for athletes to say yes, and make the space feel as considered as the athletes who walked through it.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/xgames-aspen/2.webp', alt: 'Dr. Jonathan Schoeff with Birk Ruud during an Emsculpt Neo treatment in the lounge', caption: 'Dr. Jonathan Schoeff with Birk Ruud' },
+          { src: '/images/blog/xgames-aspen/3.webp', alt: 'Dr. Jonathan Schoeff talking with Lucas Foster during an Emsculpt Neo treatment', caption: 'Dr. Jonathan Schoeff with Lucas Foster' },
+          { src: '/images/blog/xgames-aspen/5.webp', alt: 'Lucas Foster resting during an Exomind treatment', caption: 'Lucas Foster experiencing Exomind' },
+        ],
+      },
+      { type: 'h2', text: 'The athletes we hosted' },
+      { type: 'p', html: 'We were proud to welcome nine athletes into the lounge over the weekend:' },
+      {
+        type: 'ul',
+        items: [
+          'Lucas Foster',
+          'Kenny Stills (NFL)',
+          'Dane Menzies',
+          'Jason Wolle',
+          'Darcy Sharpe',
+          'Jamie Anderson',
+          'Tyler Nicholson',
+          'Luca Harrington',
+          'Birk Ruud',
+        ],
+      },
+      { type: 'p', html: 'Thank you to each of them for taking time out of a packed competition schedule to stop in.' },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/xgames-aspen/7.webp', alt: 'Lucas Foster with Brittany Gilman at the lounge', caption: 'Lucas Foster and Brittany Gilman' },
+          { src: '/images/blog/xgames-aspen/8.webp', alt: 'Jamie Anderson with Brittany Gilman at the lounge', caption: 'Jamie Anderson and Brittany Gilman' },
+          { src: '/images/blog/xgames-aspen/9.webp', alt: 'Dane Menzies, Luca Harrington and Brittany Gilman at the Athlete Recovery & Longevity Lounge', caption: 'Dane Menzies, Luca Harrington and Brittany Gilman' },
+          { src: '/images/blog/xgames-aspen/6.webp', alt: 'Birk Ruud on the treatment table in the lounge', caption: 'Birk Ruud' },
+        ],
+      },
+      { type: 'h2', text: 'Why activations like this work' },
+      {
+        type: 'p',
+        html: 'The best brand moments at major sporting events meet athletes where they already are. At X Games, that means giving them something useful during the hours between runs, in a setting that respects their time and privacy. A recovery lounge does that, and it lets a partner like BTL show up as a genuine part of the athlete experience.',
+      },
+      {
+        type: 'p',
+        html: 'That’s the approach we bring to every project at BGSE: build the experience around the athlete first, and the brand story follows.',
+      },
+      {
+        type: 'p',
+        html: 'Planning an activation for the winter season or beyond? <a href="/contact">Get in touch with BGSE Inc.</a> and let’s talk about what we can build together.',
+      },
+    ],
+  },
   {
     slug: 'brittany-gilman-releases-new-sports-business-book',
     title: 'Brittany Gilman releases “No Stilettos on the Field”',

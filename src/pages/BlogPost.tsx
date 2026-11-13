@@ -1,7 +1,7 @@
 import Img from '../components/Img'
 import { useState } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
-import Lightbox from '../components/Lightbox'
+import Lightbox, { type LightboxImage } from '../components/Lightbox'
 import YouTube from '../components/YouTube'
 import PostCard from '../components/PostCard'
 import Reveal from '../components/Reveal'
@@ -15,7 +15,7 @@ export default function BlogPost() {
   const { slug = '' } = useParams()
   const post = getPost(slug)
   useSeo(post?.title ?? 'Journal', post?.excerpt)
-  const [lb, setLb] = useState<{ imgs: { src: string; alt: string }[]; i: number } | null>(null)
+  const [lb, setLb] = useState<{ imgs: LightboxImage[]; i: number } | null>(null)
   if (!post) return <Navigate to="/blog" replace />
 
   const idx = sortedPosts.findIndex((p) => p.slug === post.slug)
@@ -95,7 +95,7 @@ export default function BlogPost() {
   )
 }
 
-function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: { src: string; alt: string }[], i: number) => void }) {
+function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: LightboxImage[], i: number) => void }) {
   switch (block.type) {
     case 'p':
       return <p dangerouslySetInnerHTML={{ __html: block.html }} />
@@ -128,11 +128,14 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: { src: stri
       )
     case 'gallery':
       return (
-        <figure className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        <figure className={`grid grid-cols-2 gap-x-3 gap-y-6 lg:-mx-16 ${block.images.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-4'}`}>
           {block.images.map((im, i) => (
-            <button key={im.src} type="button" onClick={() => onOpen(block.images, i)} className="img-zoom aspect-[4/5] overflow-hidden bg-paper-2">
-              <Img src={im.src} alt={im.alt} loading="lazy" className="h-full w-full object-cover" />
-            </button>
+            <div key={im.src}>
+              <button type="button" onClick={() => onOpen(block.images, i)} className="img-zoom block aspect-[4/5] w-full overflow-hidden bg-paper-2">
+                <Img src={im.src} alt={im.alt} loading="lazy" className="h-full w-full object-cover" />
+              </button>
+              {im.caption && <span className="mt-2 block text-center text-sm leading-snug text-muted">{im.caption}</span>}
+            </div>
           ))}
         </figure>
       )
