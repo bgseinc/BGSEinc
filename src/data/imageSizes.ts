@@ -429,11 +429,6 @@ export const imageSizes: Record<string, number[]> = {
 1000,
 1069
 ],
-"/images/blog/xgames-aspen/4.webp": [
-640,
-1000,
-1069
-],
 "/images/blog/xgames-aspen/5.webp": [
 640,
 1000,
