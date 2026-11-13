@@ -88,6 +88,8 @@ export const posts: Post[] = [
     tags: ['X Games', 'BTL', 'Emsculpt Neo', 'Recovery'],
     excerpt:
       'A look back at the BTL Emsculpt Neo Athlete Recovery & Longevity Lounge, which BGSE Inc. produced during X Games Aspen 2026.',
+    cover: '/images/blog/xgames-aspen/1.webp',
+    coverAlt: 'An athlete receiving an Emsculpt Neo treatment in the Athlete Recovery & Longevity Lounge at X Games Aspen',
     blocks: [
       {
         type: 'p',
@@ -105,6 +107,15 @@ export const posts: Post[] = [
       {
         type: 'p',
         html: 'BGSE Inc. produced the activation from concept through execution. Our goal was simple: make it easy for athletes to say yes, and make the space feel as considered as the athletes who walked through it.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/xgames-aspen/2.webp', alt: 'Emsculpt Neo treatment underway in the lounge' },
+          { src: '/images/blog/xgames-aspen/3.webp', alt: 'A man in a blazer talking with an athlete during an Emsculpt Neo treatment' },
+          { src: '/images/blog/xgames-aspen/4.webp', alt: 'Talking an athlete through a treatment in the lounge' },
+          { src: '/images/blog/xgames-aspen/5.webp', alt: 'An athlete resting during an Exomind treatment' },
+        ],
       },
       { type: 'h2', text: 'The athletes we hosted' },
       { type: 'p', html: 'We were proud to welcome ten athletes into the lounge over the weekend:' },
@@ -124,6 +135,15 @@ export const posts: Post[] = [
         ],
       },
       { type: 'p', html: 'Thank you to each of them for taking time out of a packed competition schedule to stop in.' },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/xgames-aspen/7.webp', alt: 'Lucas Foster with Brittany Gilman at the lounge' },
+          { src: '/images/blog/xgames-aspen/8.webp', alt: 'Jamie Anderson with Brittany Gilman at the lounge' },
+          { src: '/images/blog/xgames-aspen/9.webp', alt: 'Athletes with Brittany Gilman at the Athlete Recovery & Longevity Lounge' },
+          { src: '/images/blog/xgames-aspen/6.webp', alt: 'An athlete on the treatment table in the lounge' },
+        ],
+      },
       { type: 'h2', text: 'Why activations like this work' },
       {
         type: 'p',
