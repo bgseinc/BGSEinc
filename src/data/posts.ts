@@ -3,7 +3,7 @@ export type Block =
   | { type: 'h2'; text: string }
   | { type: 'h3'; text: string }
   | { type: 'img'; src: string; alt: string; caption?: string }
-  | { type: 'gallery'; images: { src: string; alt: string }[] }
+  | { type: 'gallery'; images: { src: string; alt: string; caption?: string }[] }
   | { type: 'quote'; text: string; cite?: string }
   | { type: 'ul'; items: string[] }
   | { type: 'video'; id: string; title: string }
@@ -111,18 +111,17 @@ export const posts: Post[] = [
       {
         type: 'gallery',
         images: [
-          { src: '/images/blog/xgames-aspen/2.webp', alt: 'Dr. Jonathan Schoeff with an athlete during an Emsculpt Neo treatment in the lounge' },
-          { src: '/images/blog/xgames-aspen/3.webp', alt: 'Dr. Jonathan Schoeff talking with an athlete during an Emsculpt Neo treatment' },
-          { src: '/images/blog/xgames-aspen/4.webp', alt: 'Dr. Jonathan Schoeff talking an athlete through a treatment in the lounge' },
-          { src: '/images/blog/xgames-aspen/5.webp', alt: 'An athlete resting during an Exomind treatment' },
+          { src: '/images/blog/xgames-aspen/2.webp', alt: 'Dr. Jonathan Schoeff with an athlete during an Emsculpt Neo treatment in the lounge', caption: 'Dr. Jonathan Schoeff with an athlete in the lounge' },
+          { src: '/images/blog/xgames-aspen/3.webp', alt: 'Dr. Jonathan Schoeff talking with an athlete during an Emsculpt Neo treatment', caption: 'Dr. Jonathan Schoeff with an athlete in the lounge' },
+          { src: '/images/blog/xgames-aspen/4.webp', alt: 'Dr. Jonathan Schoeff talking an athlete through a treatment in the lounge', caption: 'Dr. Jonathan Schoeff with an athlete in the lounge' },
+          { src: '/images/blog/xgames-aspen/5.webp', alt: 'An athlete resting during an Exomind treatment', caption: 'An athlete during an Exomind treatment' },
         ],
       },
       { type: 'h2', text: 'The athletes we hosted' },
-      { type: 'p', html: 'We were proud to welcome ten athletes into the lounge over the weekend:' },
+      { type: 'p', html: 'We were proud to welcome nine athletes into the lounge over the weekend:' },
       {
         type: 'ul',
         items: [
-          'JJ Thomas',
           'Lucas Foster',
           'Kenny Stills (NFL)',
           'Dane Menzies',
@@ -138,10 +137,10 @@ export const posts: Post[] = [
       {
         type: 'gallery',
         images: [
-          { src: '/images/blog/xgames-aspen/7.webp', alt: 'Lucas Foster with Brittany Gilman at the lounge' },
-          { src: '/images/blog/xgames-aspen/8.webp', alt: 'Jamie Anderson with Brittany Gilman at the lounge' },
-          { src: '/images/blog/xgames-aspen/9.webp', alt: 'Dane Menzies, Luca Harrington and Brittany Gilman at the Athlete Recovery & Longevity Lounge' },
-          { src: '/images/blog/xgames-aspen/6.webp', alt: 'An athlete on the treatment table in the lounge' },
+          { src: '/images/blog/xgames-aspen/7.webp', alt: 'Lucas Foster with Brittany Gilman at the lounge', caption: 'Lucas Foster and Brittany Gilman' },
+          { src: '/images/blog/xgames-aspen/8.webp', alt: 'Jamie Anderson with Brittany Gilman at the lounge', caption: 'Jamie Anderson and Brittany Gilman' },
+          { src: '/images/blog/xgames-aspen/9.webp', alt: 'Dane Menzies, Luca Harrington and Brittany Gilman at the Athlete Recovery & Longevity Lounge', caption: 'Dane Menzies, Luca Harrington and Brittany Gilman' },
+          { src: '/images/blog/xgames-aspen/6.webp', alt: 'An athlete on the treatment table in the lounge', caption: 'An athlete in the lounge' },
         ],
       },
       { type: 'h2', text: 'Why activations like this work' },
