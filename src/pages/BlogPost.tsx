@@ -134,7 +134,7 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: LightboxIma
               <button type="button" onClick={() => onOpen(block.images, i)} className="img-zoom block aspect-[4/5] w-full overflow-hidden bg-paper-2">
                 <Img src={im.src} alt={im.alt} loading="lazy" className="h-full w-full object-cover" />
               </button>
-              {im.caption && <span className="mt-2 block text-sm leading-snug text-muted">{im.caption}</span>}
+              {im.caption && <span className="mt-2 block text-center text-sm leading-snug text-muted">{im.caption}</span>}
             </div>
           ))}
         </figure>
