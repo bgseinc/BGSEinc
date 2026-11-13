@@ -89,7 +89,7 @@ export const posts: Post[] = [
     excerpt:
       'A look back at the BTL Emsculpt Neo Athlete Recovery & Longevity Lounge, which BGSE Inc. produced during X Games Aspen 2026.',
     cover: '/images/blog/xgames-aspen/1.webp',
-    coverAlt: 'An athlete receiving an Emsculpt Neo treatment in the Athlete Recovery & Longevity Lounge at X Games Aspen',
+    coverAlt: 'Dr. Jonathan Schoeff with an athlete receiving an Emsculpt Neo treatment in the Athlete Recovery & Longevity Lounge at X Games Aspen',
     blocks: [
       {
         type: 'p',
@@ -111,9 +111,9 @@ export const posts: Post[] = [
       {
         type: 'gallery',
         images: [
-          { src: '/images/blog/xgames-aspen/2.webp', alt: 'Emsculpt Neo treatment underway in the lounge' },
-          { src: '/images/blog/xgames-aspen/3.webp', alt: 'A man in a blazer talking with an athlete during an Emsculpt Neo treatment' },
-          { src: '/images/blog/xgames-aspen/4.webp', alt: 'Talking an athlete through a treatment in the lounge' },
+          { src: '/images/blog/xgames-aspen/2.webp', alt: 'Dr. Jonathan Schoeff with an athlete during an Emsculpt Neo treatment in the lounge' },
+          { src: '/images/blog/xgames-aspen/3.webp', alt: 'Dr. Jonathan Schoeff talking with an athlete during an Emsculpt Neo treatment' },
+          { src: '/images/blog/xgames-aspen/4.webp', alt: 'Dr. Jonathan Schoeff talking an athlete through a treatment in the lounge' },
           { src: '/images/blog/xgames-aspen/5.webp', alt: 'An athlete resting during an Exomind treatment' },
         ],
       },
@@ -126,7 +126,7 @@ export const posts: Post[] = [
           'Lucas Foster',
           'Kenny Stills (NFL)',
           'Dane Menzies',
-          'Jason Woole',
+          'Jason Wolle',
           'Darcy Sharpe',
           'Jamie Anderson',
           'Tyler Nicholson',
@@ -140,7 +140,7 @@ export const posts: Post[] = [
         images: [
           { src: '/images/blog/xgames-aspen/7.webp', alt: 'Lucas Foster with Brittany Gilman at the lounge' },
           { src: '/images/blog/xgames-aspen/8.webp', alt: 'Jamie Anderson with Brittany Gilman at the lounge' },
-          { src: '/images/blog/xgames-aspen/9.webp', alt: 'Athletes with Brittany Gilman at the Athlete Recovery & Longevity Lounge' },
+          { src: '/images/blog/xgames-aspen/9.webp', alt: 'Dane Menzies, Luca Harrington and Brittany Gilman at the Athlete Recovery & Longevity Lounge' },
           { src: '/images/blog/xgames-aspen/6.webp', alt: 'An athlete on the treatment table in the lounge' },
         ],
       },
