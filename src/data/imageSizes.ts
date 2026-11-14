@@ -453,5 +453,62 @@ export const imageSizes: Record<string, number[]> = {
 640,
 1000,
 1206
+],
+"/images/blog/nfl-paris/1.webp": [
+640,
+1000,
+1157
+],
+"/images/blog/nfl-paris/2.webp": [
+640,
+1000,
+1200
+],
+"/images/blog/nfl-paris/3.webp": [
+640,
+974
+],
+"/images/blog/nfl-paris/4.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/nfl-paris/5.webp": [
+640,
+933
+],
+"/images/blog/nfl-paris/6.webp": [
+640,
+925
+],
+"/images/blog/nfl-paris/7.webp": [
+640,
+1000,
+1200
+],
+"/images/blog/nfl-paris/8.webp": [
+640,
+1000,
+1200
+],
+"/images/blog/nfl-paris/9.webp": [
+640,
+933
+],
+"/images/blog/nfl-paris/10.webp": [
+640,
+941
+],
+"/images/blog/nfl-paris/11.webp": [
+640,
+966
+],
+"/images/blog/nfl-paris/12.webp": [
+640,
+802
+],
+"/images/blog/nfl-paris/13.webp": [
+640,
+922
 ]
 }

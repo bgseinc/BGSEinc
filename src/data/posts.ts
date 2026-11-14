@@ -26,6 +26,109 @@ const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
 
 export const posts: Post[] = [
   {
+    slug: 'nfl-in-paris-sport-is-global-culture-is-universal',
+    title: 'NFL in Paris: Sport Is Global. Culture Is Universal.',
+    date: '2026-11-13',
+    category: 'International',
+    location: 'Paris, France',
+    tags: ['NFL Paris', 'Steelers', 'Saints', 'PSG', 'Casablanca', 'Jeff Hamilton', 'Alvin Kamara'],
+    excerpt:
+      'The NFL’s first regular-season game in France brought football, fashion and culture together in Paris. Here is how BGSE Inc. spent the week, from Saints x PSG to Casablanca x NFL x Jeff Hamilton, VIP at the Stade de France and the NFL takeover of Plaza Athénée.',
+    cover: '/images/blog/nfl-paris/1.webp',
+    coverAlt: 'Brittany Gilman with two guests in front of the NFL Paris Game 2026 backdrop',
+    blocks: [
+      {
+        type: 'p',
+        html: 'The NFL’s arrival in Paris was more than a game. It was a historic week that brought sport, fashion, art, entertainment and culture together on an international stage, and BGSE Inc. was there for it, from the first collaboration to the final whistle.',
+      },
+      { type: 'h2', text: 'A first for France' },
+      {
+        type: 'p',
+        html: 'On Sunday, October 25, 2026, the Pittsburgh Steelers beat the New Orleans Saints 16–10 at the Stade de France, the <a href="https://www.tsn.ca/nfl/article/nfl-eyes-big-debut-in-paris-as-steelers-saints-game-comes-amid-security-concerns/" target="_blank" rel="noreferrer">first NFL regular-season game ever played in France</a>. <a href="https://www.steelers.com/news/steelers-beat-saints-16-10-in-paris" target="_blank" rel="noreferrer">Aaron Rodgers threw the Steelers’ only touchdown</a> and more than 78,000 fans filled the stadium, with <a href="https://hypebeast.com/2026/10/nfl-paris-game-takeover-recap" target="_blank" rel="noreferrer">Burna Boy headlining the halftime show</a>. The league built a full week around the game, including an NFL House and fan events across the city, and the game aired free-to-air on French television.',
+      },
+      {
+        type: 'p',
+        html: 'For the league, Paris was about more than a stadium. It was a chance to meet a new audience on its own terms, through the city’s fashion, music and football culture, and to bring the traditions of American football into conversation with those of France.',
+      },
+      { type: 'h2', text: 'A collaboration we can’t wait to share' },
+      {
+        type: 'p',
+        html: 'Behind the scenes, BGSE Inc. produced a collaboration with two major players during the week, and it hasn’t been shared publicly until now. Follow along for a first look.',
+      },
+      { type: 'h2', text: 'Saints x PSG: two cities, one fleur-de-lis' },
+      {
+        type: 'p',
+        html: 'BGSE Inc. was on hand for the launch of the <a href="https://www.neworleanssaints.com/news/new-orleans-saints-paris-saint-germain-partnership-nfl-france-psg-merchandise-collection" target="_blank" rel="noreferrer">Saints x Paris Saint-Germain collaboration</a>. Built around the fleur-de-lis, a symbol that belongs to both New Orleans and France, it paired a capsule collection developed with Fanatics with a week of fan, community and cultural events.',
+      },
+      {
+        type: 'p',
+        html: 'PSG’s own <a href="https://www.psg.fr/en/content/pr_nfl_football_is_football" target="_blank" rel="noreferrer">“Football is football” collection</a> added Nike-made NFL jerseys in Red and Blue and Monogram editions, plus an original piece of music and a free talk at the NFL House. It treated football as a shared starting point for athletes, musicians and creators in the city.',
+      },
+      { type: 'h2', text: 'Casablanca x NFL x Jeff Hamilton' },
+      {
+        type: 'p',
+        html: 'Fashion had its own moment at the launch of the Casablanca x NFL x Jeff Hamilton capsule, a reminder that football and style have long shared a language. Saints running back Alvin Kamara was among those who attended, and the pieces carried the occasion with them: the varsity jacket’s back panel commemorates the inaugural Paris Game, dated October 25, 2026.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/nfl-paris/6.webp', alt: 'Alvin Kamara and Jeff Hamilton holding a signed Casablanca x NFL poster', caption: 'Alvin Kamara and Jeff Hamilton with the signed capsule poster' },
+          { src: '/images/blog/nfl-paris/5.webp', alt: 'Alvin Kamara in the Casablanca x NFL x Jeff Hamilton varsity jacket, seen in a mirror with Brittany Gilman behind him', caption: 'Alvin Kamara in the varsity jacket' },
+          { src: '/images/blog/nfl-paris/11.webp', alt: 'A guest in a cowboy hat and a Casablanca x NFL jacket at the launch', caption: 'A guest at the launch' },
+        ],
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/nfl-paris/7.webp', alt: 'Jeff Hamilton and Brittany Gilman in the Casablanca boutique', caption: 'Jeff Hamilton and Brittany Gilman' },
+          { src: '/images/blog/nfl-paris/8.webp', alt: 'Didier Nguyen and Brittany Gilman at the launch', caption: 'Didier Nguyen and Brittany Gilman' },
+          { src: '/images/blog/nfl-paris/9.webp', alt: 'A Casablanca x NFL T-shirt on a hanger', caption: 'Casablanca x NFL T-shirt' },
+          { src: '/images/blog/nfl-paris/10.webp', alt: 'Detail of the Casablanca x NFL illustrated silk jacket', caption: 'Illustrated silk jacket detail' },
+        ],
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/nfl-paris/13.webp', alt: 'Back of the Casablanca x NFL varsity jacket with the number 26 and the NFL shield', caption: 'The varsity jacket, back view' },
+          { src: '/images/blog/nfl-paris/12.webp', alt: 'Back of the Casablanca x NFL varsity jacket with a second jacket reflected in a mirror', caption: 'Back view, with a second jacket in the mirror' },
+        ],
+      },
+      { type: 'h2', text: 'VIP at the Stade de France' },
+      {
+        type: 'p',
+        html: 'On game day, BGSE Inc. watched the first NFL regular-season game in France from VIP at the Stade de France, as the Steelers and Saints played in front of a crowd that made the stadium feel like a global stage.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/nfl-paris/2.webp', alt: 'Outside the Stade de France in front of a large New Orleans Saints banner', caption: 'Outside the Stade de France' },
+          { src: '/images/blog/nfl-paris/3.webp', alt: 'The Saints and Steelers lining up on the field at the Stade de France', caption: 'Saints and Steelers at the Stade de France' },
+        ],
+      },
+      { type: 'h2', text: 'The NFL takeover of Plaza Athénée' },
+      {
+        type: 'p',
+        html: 'The week also included the NFL’s takeover of Plaza Athénée, bringing the league into one of the city’s best-known hotels and giving the week another stop where football met Parisian style.',
+      },
+      {
+        type: 'img',
+        src: '/images/blog/nfl-paris/4.webp',
+        alt: 'Brittany Gilman and two guests in front of a Christian Louboutin display in Paris',
+        caption: 'At the Christian Louboutin boutique in Paris',
+      },
+      { type: 'h2', text: 'Where sport and culture meet' },
+      {
+        type: 'p',
+        html: 'From the Saints x PSG collaboration to the fashion launches and everything in between, Paris showed how sport keeps creating chances for cultural exchange and connection. It was a historic moment for the NFL, and another sign of how closely sports and global culture are now intertwined.',
+      },
+      { type: 'p', html: '<strong>Sport is global. Culture is universal.</strong>' },
+      {
+        type: 'p',
+        html: '<strong>Sources:</strong> <a href="https://www.tsn.ca/nfl/article/nfl-eyes-big-debut-in-paris-as-steelers-saints-game-comes-amid-security-concerns/" target="_blank" rel="noreferrer">TSN</a> · <a href="https://www.steelers.com/news/steelers-beat-saints-16-10-in-paris" target="_blank" rel="noreferrer">Steelers.com</a> · <a href="https://hypebeast.com/2026/10/nfl-paris-game-takeover-recap" target="_blank" rel="noreferrer">Hypebeast</a> · <a href="https://www.neworleanssaints.com/news/new-orleans-saints-paris-saint-germain-partnership-nfl-france-psg-merchandise-collection" target="_blank" rel="noreferrer">New Orleans Saints</a> · <a href="https://www.psg.fr/en/content/pr_nfl_football_is_football" target="_blank" rel="noreferrer">Paris Saint-Germain</a>',
+      },
+    ],
+  },
+  {
     slug: 'emsculpt-neo-athlete-recovery-longevity-lounge-x-games-aspen-2026',
     title: 'Recovery at Altitude: Inside the Emsculpt Neo Athlete Recovery & Longevity Lounge at X Games Aspen 2026',
     date: '2026-11-10',

@@ -128,7 +128,7 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: LightboxIma
       )
     case 'gallery':
       return (
-        <figure className={`grid grid-cols-2 gap-x-3 gap-y-6 lg:-mx-16 ${block.images.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-4'}`}>
+        <figure className={`grid grid-cols-2 gap-x-3 gap-y-6 lg:-mx-16 ${block.images.length === 2 ? 'sm:grid-cols-2' : block.images.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-4'}`}>
           {block.images.map((im, i) => (
             <div key={im.src}>
               <button type="button" onClick={() => onOpen(block.images, i)} className="img-zoom block aspect-[4/5] w-full overflow-hidden bg-paper-2">
