@@ -510,5 +510,25 @@ export const imageSizes: Record<string, number[]> = {
 "/images/blog/nfl-paris/13.webp": [
 640,
 922
+],
+"/images/blog/arsenal-abdullah/1.webp": [
+640,
+650
+],
+"/images/blog/arsenal-abdullah/2.webp": [
+640,
+806
+],
+"/images/blog/arsenal-abdullah/3.webp": [
+640,
+856
+],
+"/images/blog/chelsea-white/1.webp": [
+640,
+858
+],
+"/images/blog/chelsea-white/2.webp": [
+640,
+868
 ]
 }

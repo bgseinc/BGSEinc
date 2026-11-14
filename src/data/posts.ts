@@ -26,6 +26,102 @@ const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
 
 export const posts: Post[] = [
   {
+    slug: 'rachaad-white-chelsea-stamford-bridge',
+    title: 'Rachaad White Gets the Chelsea Treatment at Stamford Bridge',
+    date: '2026-11-14',
+    category: 'International',
+    location: 'London, England',
+    tags: ['Rachaad White', 'Chelsea', 'Stamford Bridge', 'Commanders'],
+    excerpt:
+      'Washington Commanders running back Rachaad White stepped inside Stamford Bridge as a guest of Chelsea Football Club, and the collaboration was one we’re proud to share.',
+    cover: '/images/blog/chelsea-white/1.webp',
+    coverAlt: 'Rachaad White holding a custom Chelsea shirt at Stamford Bridge',
+    blocks: [
+      {
+        type: 'p',
+        html: 'An NFL running back. One of the most famous grounds in world football. A day that went exactly the way it was meant to.',
+      },
+      { type: 'h2', text: 'Inside Stamford Bridge' },
+      {
+        type: 'p',
+        html: 'Washington Commanders running back Rachaad White spent a day at Stamford Bridge as a guest of Chelsea Football Club. A huge thank you to our Chelsea family for taking such great care of him.',
+      },
+      {
+        type: 'img',
+        src: '/images/blog/chelsea-white/2.webp',
+        alt: 'Rachaad White walking the touchline at Stamford Bridge holding a Chelsea shirt',
+        caption: 'Rachaad White at Stamford Bridge',
+      },
+      { type: 'h2', text: 'Beyond the game' },
+      {
+        type: 'p',
+        html: 'Moments like this connect two worlds that don’t often meet: American football and the global game. For the athletes, the clubs and the brands around them, they open doors across sports, culture and international markets.',
+      },
+      {
+        type: 'p',
+        html: 'How it comes together stays with us. The result speaks for itself.',
+      },
+      { type: 'cta', href: 'https://lnkd.in/eRf7yYET', label: 'Watch the collab' },
+      {
+        type: 'p',
+        html: 'Want an experience like this for your athlete or brand? <a href="/contact">Get in touch with BGSE Inc.</a> and let’s talk.',
+      },
+    ],
+  },
+  {
+    slug: 'ameer-abdullah-arsenal-emirates-champions-league',
+    title: 'Ameer Abdullah Takes the Global Game to Emirates Stadium',
+    date: '2026-11-14',
+    category: 'International',
+    location: 'London, England',
+    tags: ['Ameer Abdullah', 'Arsenal', 'Jaguars', 'Champions League'],
+    excerpt:
+      'Jacksonville Jaguars running back Ameer Abdullah was hosted by Arsenal at Emirates Stadium for a UEFA Champions League night against Lille, with a shirt of his own and a turn on the club’s show.',
+    cover: '/images/blog/arsenal-abdullah/2.webp',
+    coverAlt: 'Ameer Abdullah holding an Arsenal shirt with his name and the number 20 at Emirates Stadium',
+    blocks: [
+      {
+        type: 'p',
+        html: 'An NFL running back. A European football night under the lights. One of London’s loudest stadiums.',
+      },
+      { type: 'h2', text: 'A Champions League night at Emirates' },
+      {
+        type: 'p',
+        html: 'Jacksonville Jaguars running back Ameer Abdullah was hosted by Arsenal at Emirates Stadium for the UEFA Champions League clash against Lille. A big thank you to our Arsenal Football Club family for welcoming him so warmly.',
+      },
+      { type: 'h2', text: 'His name on the back of the shirt' },
+      {
+        type: 'p',
+        html: 'The night came with a personal touch: an Arsenal shirt with his name and number on the back, held up with the pitch behind him.',
+      },
+      { type: 'h2', text: 'On the show' },
+      {
+        type: 'p',
+        html: 'He also made an appearance on Arsenal’s own show, mic in hand, before a studio window looking out over the stadium.',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/arsenal-abdullah/1.webp', alt: 'Ameer Abdullah speaking into a Live From N5 microphone on Arsenal’s show', caption: 'Ameer Abdullah on Arsenal’s show' },
+          { src: '/images/blog/arsenal-abdullah/3.webp', alt: 'Ameer Abdullah with a guest holding his Arsenal shirt at Emirates Stadium', caption: 'At Emirates Stadium' },
+        ],
+      },
+      { type: 'h2', text: 'Beyond their own sport' },
+      {
+        type: 'p',
+        html: 'Creating opportunities for athletes to experience the global game beyond their own sport is at the heart of what we do at BG Sports Enterprises Inc. From the NFL to European football, these experiences create meaningful connections across sports, culture and international markets.',
+      },
+      {
+        type: 'p',
+        html: 'How it comes together stays with us. The result speaks for itself.',
+      },
+      {
+        type: 'p',
+        html: 'Want an experience like this for your athlete or brand? <a href="/contact">Get in touch with BGSE Inc.</a> and let’s talk.',
+      },
+    ],
+  },
+  {
     slug: 'nfl-in-paris-sport-is-global-culture-is-universal',
     title: 'NFL in Paris: Sport Is Global. Culture Is Universal.',
     date: '2026-11-13',
