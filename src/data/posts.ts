@@ -74,7 +74,7 @@ export const posts: Post[] = [
         images: [
           { src: '/images/blog/nfl-paris/6.webp', alt: 'Alvin Kamara and Jeff Hamilton holding a signed Casablanca x NFL poster', caption: 'Alvin Kamara and Jeff Hamilton with the signed capsule poster' },
           { src: '/images/blog/nfl-paris/5.webp', alt: 'Alvin Kamara in the Casablanca x NFL x Jeff Hamilton varsity jacket, seen in a mirror with Brittany Gilman behind him', caption: 'Alvin Kamara in the varsity jacket' },
-          { src: '/images/blog/nfl-paris/11.webp', alt: 'A guest in a cowboy hat and a Casablanca x NFL jacket at the launch', caption: 'A guest at the launch' },
+          { src: '/images/blog/nfl-paris/11.webp', alt: 'Influencer Boris Becker in a cowboy hat and a Casablanca x NFL jacket at the launch', caption: 'Influencer Boris Becker at the launch' },
         ],
       },
       {
