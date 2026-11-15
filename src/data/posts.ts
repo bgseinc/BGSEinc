@@ -38,6 +38,7 @@ export const posts: Post[] = [
       'Washington Commanders running back Rachaad White stepped inside Stamford Bridge as a guest of Chelsea Football Club, and the collaboration was one we’re proud to share.',
     cover: '/images/blog/chelsea-white/1.webp',
     coverAlt: 'Rachaad White holding a custom Chelsea shirt at Stamford Bridge',
+    coverPosition: 'center 15%',
     blocks: [
       {
         type: 'p',
