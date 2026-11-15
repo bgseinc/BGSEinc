@@ -145,6 +145,13 @@ function BlockView({ block, onOpen }: { block: Block; onOpen: (imgs: LightboxIma
           <YouTube id={block.id} title={block.title} />
         </figure>
       )
+    case 'clip':
+      return (
+        <figure>
+          <video src={block.src} poster={block.poster} controls playsInline preload="metadata" className="mx-auto max-h-[80vh] w-full bg-ink object-contain" />
+          {block.caption && <figcaption>{block.caption}</figcaption>}
+        </figure>
+      )
     case 'cta':
       return (
         <p className="mt-8">

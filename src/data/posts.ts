@@ -7,6 +7,7 @@ export type Block =
   | { type: 'quote'; text: string; cite?: string }
   | { type: 'ul'; items: string[] }
   | { type: 'video'; id: string; title: string }
+  | { type: 'clip'; src: string; poster: string; caption?: string }
   | { type: 'cta'; href: string; label: string }
 
 export type Post = {
@@ -52,6 +53,27 @@ export const posts: Post[] = [
         src: '/images/blog/chelsea-white/2.webp',
         alt: 'Rachaad White walking the touchline at Stamford Bridge holding a Chelsea shirt',
         caption: 'Rachaad White at Stamford Bridge',
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/chelsea-white/3.webp', alt: 'Rachaad White in profile at Stamford Bridge', caption: 'Rachaad White at Stamford Bridge' },
+          { src: '/images/blog/chelsea-white/4.webp', alt: 'Rachaad White standing inside Stamford Bridge', caption: 'Inside Stamford Bridge' },
+          { src: '/images/blog/chelsea-white/5.webp', alt: 'Rachaad White seated in the stands at Stamford Bridge', caption: 'In the stands at Stamford Bridge' },
+        ],
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/chelsea-white/6.webp', alt: 'Rachaad White in the Chelsea press room', caption: 'In the Chelsea press room' },
+          { src: '/images/blog/chelsea-white/7.webp', alt: 'Rachaad White with the trophy collection at Stamford Bridge', caption: 'With the trophy collection' },
+        ],
+      },
+      {
+        type: 'clip',
+        src: '/images/blog/chelsea-white/clip.mp4',
+        poster: '/images/blog/chelsea-white/clip-poster.webp',
+        caption: 'Rachaad White with Chelsea’s trophies',
       },
       { type: 'h2', text: 'Beyond the game' },
       {
@@ -99,14 +121,19 @@ export const posts: Post[] = [
       { type: 'h2', text: 'On the show' },
       {
         type: 'p',
-        html: 'He also made an appearance on Arsenal’s own show, mic in hand, before a studio window looking out over the stadium.',
+        html: 'He also made an appearance on Arsenal’s own show, <em>Live From N5</em>, mic in hand, before a studio window looking out over the stadium.',
       },
       {
         type: 'gallery',
         images: [
-          { src: '/images/blog/arsenal-abdullah/1.webp', alt: 'Ameer Abdullah speaking into a Live From N5 microphone on Arsenal’s show', caption: 'Ameer Abdullah on Arsenal’s show' },
-          { src: '/images/blog/arsenal-abdullah/3.webp', alt: 'Ameer Abdullah and Brittany Gilman holding his Arsenal shirt at Emirates Stadium', caption: 'Ameer Abdullah and Brittany Gilman at Emirates Stadium' },
+          { src: '/images/blog/arsenal-abdullah/1.webp', alt: 'Ameer Abdullah speaking into a Live From N5 microphone on Arsenal’s show', caption: 'Ameer Abdullah on Live From N5' },
+          { src: '/images/blog/arsenal-abdullah/3.webp', alt: 'Ameer Abdullah and BGSE CEO Brittany Gilman holding his Arsenal shirt at Emirates Stadium', caption: 'Ameer Abdullah with BGSE CEO Brittany Gilman' },
         ],
+      },
+      { type: 'h2', text: 'Then came the Jaguars’ big finish' },
+      {
+        type: 'p',
+        html: 'Back on the NFL calendar, Ameer was at the center of one of the season’s wildest endings. In London, the Jaguars edged the Eagles 19–17 when Cam Little hit a 57-yard field goal as time expired, and it was Ameer’s kick return that set it all up in the final seconds.',
       },
       { type: 'h2', text: 'Beyond their own sport' },
       {
