@@ -88,6 +88,10 @@ export const posts: Post[] = [
       { type: 'cta', href: 'https://lnkd.in/eRf7yYET', label: 'Watch the collab' },
       {
         type: 'p',
+        html: '<em>Photos courtesy of Chelsea FC.</em>',
+      },
+      {
+        type: 'p',
         html: 'Want an experience like this for your athlete or brand? <a href="/contact">Get in touch with BGSE Inc.</a> and let’s talk.',
       },
     ],
