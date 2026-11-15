@@ -28,6 +28,52 @@ const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
 
 export const posts: Post[] = [
   {
+    slug: 'super-bowl-lxi-week-athletes-agents-managers',
+    title: 'Super Bowl LXI Is Around the Corner: Make the Week Count',
+    date: '2026-11-15',
+    category: 'Events',
+    location: 'Los Angeles, California',
+    tags: ['Super Bowl', 'Radio Row', 'Media Tours', 'Athletes', 'Agents'],
+    excerpt:
+      'For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most. Custom itineraries, Radio Row, media tours, exclusive events and on-site support.',
+    cover: '/images/home/g4.webp',
+    coverAlt: 'Brittany Gilman with an athlete on radio row during Super Bowl week',
+    coverPosition: 'center 20%',
+    blocks: [
+      {
+        type: 'p',
+        html: 'Super Bowl LXI is around the corner. For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most.',
+      },
+      { type: 'h2', text: 'What we can do for your week' },
+      {
+        type: 'ul',
+        items: [
+          'Custom Super Bowl itineraries',
+          'Radio Row and media tours',
+          'Additional media, appearance and brand opportunities',
+          'Access to exclusive events',
+          'Full-service event production and on-site support',
+        ],
+      },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/home/g4.webp', alt: 'Brittany Gilman with an athlete on radio row during Super Bowl week', caption: 'Super Bowl radio row' },
+          { src: '/images/home/g8.webp', alt: 'Brittany Gilman with an athlete on the SiriusXM set at Super Bowl week', caption: 'Super Bowl media week' },
+        ],
+      },
+      { type: 'h2', text: 'Maximize the week' },
+      {
+        type: 'p',
+        html: 'We help talent maximize the week: efficiently, intentionally, and with the right opportunities.',
+      },
+      {
+        type: 'p',
+        html: 'If you’re looking to add real value to your Super Bowl presence, <a href="/contact">reach out to BGSE Inc.</a> and let’s talk.',
+      },
+    ],
+  },
+  {
     slug: 'rachaad-white-chelsea-stamford-bridge',
     title: 'Rachaad White Gets the Chelsea Treatment at Stamford Bridge',
     date: '2026-11-14',
