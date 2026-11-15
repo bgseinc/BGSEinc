@@ -9,7 +9,7 @@ export default function PostCard({ post, large = false }: { post: Post; large?: 
     <Link to={`/blog/${post.slug}`} className="group block">
       <div className={`img-zoom relative overflow-hidden bg-ink-3 ${large ? 'aspect-[4/3]' : 'aspect-[4/5]'}`}>
         {post.cover ? (
-          <Img src={post.cover} alt={post.coverAlt ?? ''} loading="lazy" className="h-full w-full object-cover" />
+          <Img src={post.cover} alt={post.coverAlt ?? ''} loading="lazy" className="h-full w-full object-cover" style={post.coverPosition ? { objectPosition: post.coverPosition } : undefined} />
         ) : (
           <div className="flex h-full w-full flex-col justify-between bg-ink p-6">
             <img src="/images/logo/logo-light.webp" alt="" className="h-10 w-auto self-start opacity-80" />

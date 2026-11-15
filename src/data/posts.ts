@@ -17,6 +17,7 @@ export type Post = {
   excerpt: string
   cover?: string
   coverAlt?: string
+  coverPosition?: string // CSS object-position for the cover crop, e.g. 'center 15%'
   location?: string
   tags?: string[]
   blocks: Block[]
@@ -79,6 +80,7 @@ export const posts: Post[] = [
       'Jacksonville Jaguars running back Ameer Abdullah was hosted by Arsenal at Emirates Stadium for a UEFA Champions League night against Lille, with a shirt of his own and a turn on the club’s show.',
     cover: '/images/blog/arsenal-abdullah/2.webp',
     coverAlt: 'Ameer Abdullah holding an Arsenal shirt with his name and the number 20 at Emirates Stadium',
+    coverPosition: 'center 8%',
     blocks: [
       {
         type: 'p',
@@ -103,7 +105,7 @@ export const posts: Post[] = [
         type: 'gallery',
         images: [
           { src: '/images/blog/arsenal-abdullah/1.webp', alt: 'Ameer Abdullah speaking into a Live From N5 microphone on Arsenal’s show', caption: 'Ameer Abdullah on Arsenal’s show' },
-          { src: '/images/blog/arsenal-abdullah/3.webp', alt: 'Ameer Abdullah with a guest holding his Arsenal shirt at Emirates Stadium', caption: 'At Emirates Stadium' },
+          { src: '/images/blog/arsenal-abdullah/3.webp', alt: 'Ameer Abdullah and Brittany Gilman holding his Arsenal shirt at Emirates Stadium', caption: 'Ameer Abdullah and Brittany Gilman at Emirates Stadium' },
         ],
       },
       { type: 'h2', text: 'Beyond their own sport' },
