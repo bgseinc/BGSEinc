@@ -32,14 +32,17 @@ export const posts: Post[] = [
     title: 'Bhayshul Tuten Powers the Jaguars to 8-2',
     date: '2026-11-15',
     category: 'News',
-    location: 'Jacksonville, Florida',
+    location: 'Nashville, Tennessee',
     tags: ['Bhayshul Tuten', 'Jaguars', 'Client News'],
     excerpt:
       'Jacksonville Jaguars running back Bhayshul Tuten turned 29 touches into 113 yards and a touchdown in Week 10, helping carry Jacksonville to 8-2.',
+    cover: '/images/blog/tuten/1.webp',
+    coverAlt: 'Bhayshul Tuten with BGSE CEO Brittany Gilman',
+    coverPosition: 'center 0%',
     blocks: [
       {
         type: 'p',
-        html: 'Jacksonville Jaguars running back Bhayshul Tuten delivered an explosive performance in Week 10, leading the Jaguars past the Tennessee Titans and to an 8-2 record.',
+        html: 'Jacksonville Jaguars running back Bhayshul Tuten delivered an explosive performance in Week 10, leading the Jaguars to a 40–23 win over the Tennessee Titans at Nissan Stadium and an 8-2 record.',
       },
       { type: 'h2', text: 'The numbers' },
       {
@@ -54,8 +57,19 @@ export const posts: Post[] = [
       { type: 'h2', text: 'Carrying the load' },
       {
         type: 'p',
-        html: 'Tuten was the engine of Jacksonville’s offense, taking the bulk of the work out of the backfield and finishing the day with the score that put the game away.',
+        html: 'Tuten was the workhorse of Jacksonville’s offense on Sunday, taking the bulk of the work out of the backfield. It came just days after the Jaguars’ Thursday night game against the Ravens, where he found the end zone as well, and it showed the kind of workload he can handle.',
       },
+      {
+        type: 'p',
+        html: 'The Jaguars (8-2) now head into the stretch run with momentum, and with Tuten firmly established as the lead back.',
+      },
+      { type: 'h2', text: 'In his own words' },
+      {
+        type: 'p',
+        html: 'Hear from Bhayshul himself. Here he talks about his second season in a full interview with News4JAX.',
+      },
+      { type: 'video', id: 'Is1qBcOpk3w', title: 'Full Interview: Bhayshul Tuten talks year 2 (News4JAX)' },
+      { type: 'cta', href: 'https://www.news4jax.com/video/sports/2026/09/27/bhayshul-tuten-week-3-postgame-interview/', label: 'Week 3 postgame interview' },
       {
         type: 'p',
         html: 'We’re proud to handle PR for Bhayshul at BG Sports Enterprises Inc., and we’re excited to watch what he and the Jaguars do next.',
