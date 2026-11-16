@@ -77,7 +77,7 @@ export const posts: Post[] = [
       'For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most. VIP itineraries, red carpet access, event production, Radio Row, media tours, appearances and collaborations.',
     cover: '/images/home/g4.webp',
     coverAlt: 'Brittany Gilman with an athlete on radio row during Super Bowl week',
-    coverPosition: 'center 20%',
+    coverPosition: 'center 0%',
     blocks: [
       {
         type: 'p',
@@ -96,7 +96,13 @@ export const posts: Post[] = [
           'Full-service event production and on-site support',
           'Radio Row and media tours',
           'Appearances, brand opportunities and collaborations',
+          'Content creation to capture the iconic moments',
         ],
+      },
+      { type: 'h2', text: 'Content that captures the moment' },
+      {
+        type: 'p',
+        html: 'Super Bowl week moves fast, and the best moments are over in seconds. We capture the iconic moments and put together content from them, with professional video and photo coverage on the ground, so your week lives on well beyond the game.',
       },
       { type: 'h2', text: 'Super Bowl week, in action' },
       {
