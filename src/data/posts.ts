@@ -36,9 +36,9 @@ export const posts: Post[] = [
     tags: ['Bhayshul Tuten', 'Jaguars', 'Client News'],
     excerpt:
       'Jacksonville Jaguars running back Bhayshul Tuten turned 29 touches into 113 yards and a touchdown in Week 10, helping carry Jacksonville to 8-2.',
-    cover: '/images/blog/tuten/1.webp',
-    coverAlt: 'Bhayshul Tuten with BGSE CEO Brittany Gilman',
-    coverPosition: 'center 0%',
+    cover: '/images/blog/tuten/2.webp',
+    coverAlt: 'Bhayshul Tuten running with the ball in a Jaguars uniform',
+    coverPosition: 'center 5%',
     blocks: [
       {
         type: 'p',
@@ -62,6 +62,12 @@ export const posts: Post[] = [
       {
         type: 'p',
         html: 'The Jaguars (8-2) now head into the stretch run with momentum, and with Tuten firmly established as the lead back.',
+      },
+      {
+        type: 'img',
+        src: '/images/blog/tuten/1.webp',
+        alt: 'Bhayshul Tuten with BGSE CEO Brittany Gilman',
+        caption: 'Bhayshul Tuten with BGSE CEO Brittany Gilman',
       },
       { type: 'h2', text: 'In his own words' },
       {

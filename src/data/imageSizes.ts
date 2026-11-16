@@ -594,5 +594,10 @@ export const imageSizes: Record<string, number[]> = {
 "/images/blog/tuten/1.webp": [
 640,
 814
+],
+"/images/blog/tuten/2.webp": [
+640,
+1000,
+1172
 ]
 }
