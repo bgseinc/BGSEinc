@@ -28,6 +28,45 @@ const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
 
 export const posts: Post[] = [
   {
+    slug: 'bhayshul-tuten-explosive-week-10-jaguars-8-2',
+    title: 'Bhayshul Tuten Powers the Jaguars to 8-2',
+    date: '2026-11-15',
+    category: 'News',
+    location: 'Jacksonville, Florida',
+    tags: ['Bhayshul Tuten', 'Jaguars', 'Client News'],
+    excerpt:
+      'Jacksonville Jaguars running back Bhayshul Tuten turned 29 touches into 113 yards and a touchdown in Week 10, helping carry Jacksonville to 8-2.',
+    blocks: [
+      {
+        type: 'p',
+        html: 'Jacksonville Jaguars running back Bhayshul Tuten delivered an explosive performance in Week 10, leading the Jaguars past the Tennessee Titans and to an 8-2 record.',
+      },
+      { type: 'h2', text: 'The numbers' },
+      {
+        type: 'ul',
+        items: [
+          '29 touches for 113 scrimmage yards',
+          '26 carries for 88 rushing yards',
+          '3 catches for 25 yards',
+          'A 6-yard rushing touchdown late in the fourth quarter to seal the win',
+        ],
+      },
+      { type: 'h2', text: 'Carrying the load' },
+      {
+        type: 'p',
+        html: 'Tuten was the engine of Jacksonville’s offense, taking the bulk of the work out of the backfield and finishing the day with the score that put the game away.',
+      },
+      {
+        type: 'p',
+        html: 'We’re proud to handle PR for Bhayshul at BG Sports Enterprises Inc., and we’re excited to watch what he and the Jaguars do next.',
+      },
+      {
+        type: 'p',
+        html: 'Looking for PR, media and brand strategy for your athlete? <a href="/contact">Get in touch with BGSE Inc.</a> and let’s talk.',
+      },
+    ],
+  },
+  {
     slug: 'super-bowl-lxi-week-athletes-agents-managers',
     title: 'Super Bowl LXI Is Around the Corner: Make the Week Count',
     date: '2026-11-15',
@@ -35,7 +74,7 @@ export const posts: Post[] = [
     location: 'Los Angeles, California',
     tags: ['Super Bowl', 'Radio Row', 'Media Tours', 'Athletes', 'Agents'],
     excerpt:
-      'For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most. Custom itineraries, Radio Row, media tours, exclusive events and on-site support.',
+      'For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most. VIP itineraries, red carpet access, event production, Radio Row, media tours, appearances and collaborations.',
     cover: '/images/home/g4.webp',
     coverAlt: 'Brittany Gilman with an athlete on radio row during Super Bowl week',
     coverPosition: 'center 20%',
@@ -46,20 +85,35 @@ export const posts: Post[] = [
       },
       { type: 'h2', text: 'What we can do for your week' },
       {
+        type: 'p',
+        html: 'From VIP itineraries, red carpet event access, event production, Radio Row and media tours, to appearances and collaborations, we help talent make the most of Super Bowl week.',
+      },
+      {
         type: 'ul',
         items: [
-          'Custom Super Bowl itineraries',
-          'Radio Row and media tours',
-          'Additional media, appearance and brand opportunities',
-          'Access to exclusive events',
+          'VIP Super Bowl itineraries',
+          'Red carpet and exclusive event access',
           'Full-service event production and on-site support',
+          'Radio Row and media tours',
+          'Appearances, brand opportunities and collaborations',
+        ],
+      },
+      { type: 'h2', text: 'Super Bowl week, in action' },
+      {
+        type: 'gallery',
+        images: [
+          { src: '/images/blog/super-bowl/1.webp', alt: 'Brittany Gilman and TJ Ward on the FOX NFL set', caption: 'Brittany Gilman and TJ Ward' },
+          { src: '/images/blog/super-bowl/2.webp', alt: 'Ryan Babel and Shannon Sharpe at a Super Bowl week event', caption: 'Ryan Babel and Shannon Sharpe' },
+          { src: '/images/blog/super-bowl/3.webp', alt: 'Steve Avila during a Super Bowl week media interview', caption: 'Steve Avila on NFL Network' },
+          { src: '/images/blog/super-bowl/4.webp', alt: 'Ryan Babel at a Super Bowl week media set', caption: 'Ryan Babel on NFL Network' },
         ],
       },
       {
         type: 'gallery',
         images: [
-          { src: '/images/home/g4.webp', alt: 'Brittany Gilman with an athlete on radio row during Super Bowl week', caption: 'Super Bowl radio row' },
-          { src: '/images/home/g8.webp', alt: 'Brittany Gilman with an athlete on the SiriusXM set at Super Bowl week', caption: 'Super Bowl media week' },
+          { src: '/images/blog/super-bowl/5.webp', alt: 'TJ Ward and Pat Surtain on the TikTok set', caption: 'TJ Ward and Pat Surtain on TikTok' },
+          { src: '/images/blog/super-bowl/6.webp', alt: 'Bub Means with SpongeBob and Patrick at the Nickelodeon NFL activation', caption: 'Bub Means with Nickelodeon' },
+          { src: '/images/blog/super-bowl/7.webp', alt: 'Bub Means being interviewed on a Super Bowl week set', caption: 'Bub Means interview' },
         ],
       },
       { type: 'h2', text: 'Maximize the week' },

@@ -555,5 +555,40 @@ export const imageSizes: Record<string, number[]> = {
 640,
 1000,
 1200
+],
+"/images/blog/super-bowl/1.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/super-bowl/2.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/super-bowl/3.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/super-bowl/4.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/super-bowl/5.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/super-bowl/6.webp": [
+640,
+1000,
+1206
+],
+"/images/blog/super-bowl/7.webp": [
+640,
+1000,
+1206
 ]
 }
