@@ -10,7 +10,7 @@ export const site = {
   contactEmail: 'info@bgseinc.com',
   // Optional: point this at a form backend (Formspree, Basin, Netlify Forms, etc.).
   // When undefined the contact form falls back to the visitor's email client.
-  formEndpoint: import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined,
+  formEndpoint: (import.meta.env.VITE_CONTACT_ENDPOINT as string | undefined) ?? 'https://formspree.io/f/mnpddaop',
   socials: [
     { label: 'Instagram', href: 'https://instagram.com/bgsportsentinc', icon: 'instagram' },
     { label: 'X (Twitter)', href: 'https://twitter.com/BGSportsEntInc', icon: 'x' },
