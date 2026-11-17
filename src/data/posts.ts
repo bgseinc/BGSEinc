@@ -96,10 +96,9 @@ export const posts: Post[] = [
     tags: ['Super Bowl', 'Radio Row', 'Media Tours', 'Athletes', 'Agents'],
     excerpt:
       'For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most. VIP itineraries, red carpet access, event production, Radio Row, media tours, appearances and collaborations.',
-    cover: '/images/blog/super-bowl/5-wide.webp',
-    coverAlt: 'TJ Ward and Pat Surtain on the TikTok set during Super Bowl week',
-    coverPosition: 'center 40%',
-    coverFit: 'contain',
+    cover: '/images/blog/super-bowl/cover-tiktok.webp',
+    coverAlt: 'TJ Ward at the TikTok step-and-repeat during Super Bowl week',
+    coverPosition: 'center 30%',
     blocks: [
       {
         type: 'p',

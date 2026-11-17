@@ -605,5 +605,10 @@ export const imageSizes: Record<string, number[]> = {
 1000,
 1400,
 1800
+],
+"/images/blog/super-bowl/cover-tiktok.webp": [
+640,
+1000,
+1366
 ]
 }
