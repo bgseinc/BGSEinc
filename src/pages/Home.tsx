@@ -1,7 +1,6 @@
 import Img from '../components/Img'
 import { Link } from 'react-router-dom'
 import Reveal from '../components/Reveal'
-import YouTube from '../components/YouTube'
 import PostCard from '../components/PostCard'
 import { Button, Cta, Eyebrow, Marquee, SectionHead } from '../components/ui'
 import { ArrowRight, ArrowUpRight } from '../components/Icons'
@@ -9,7 +8,6 @@ import { arenas, pillars, site, stats } from '../data/site'
 import { services } from '../data/services'
 import { sortedPosts } from '../data/posts'
 import { clients, testimonials } from '../data/people'
-import { channelUrl, featuredVideo } from '../data/videos'
 import { useSeo } from '../hooks/useSeo'
 import { useEffect, useState } from 'react'
 
@@ -254,28 +252,6 @@ export default function Home() {
         </div>
         <div className="container-x mt-16">
           <Testimonials />
-        </div>
-      </section>
-
-      {/* VIDEO */}
-      <section className="bg-ink py-20 text-white sm:py-28">
-        <div className="container-x grid gap-12 lg:grid-cols-12 lg:items-center">
-          <div className="lg:col-span-4">
-            <Reveal>
-              <SectionHead light eyebrow="Watch" title="BGSE in motion." text="Red carpets, radio rows, launches and the people behind them. See more on our YouTube channel." />
-            </Reveal>
-            <Reveal delay={100} className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Button to="/portfolio#videos" variant="outline">
-                All videos
-              </Button>
-              <Button href={channelUrl} variant="outline">
-                YouTube
-              </Button>
-            </Reveal>
-          </div>
-          <Reveal delay={150} className="lg:col-span-8">
-            <YouTube id={featuredVideo.id} title={featuredVideo.title} />
-          </Reveal>
         </div>
       </section>
 

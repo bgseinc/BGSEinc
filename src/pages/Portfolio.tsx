@@ -2,16 +2,14 @@ import Img from '../components/Img'
 import { useState } from 'react'
 import Reveal from '../components/Reveal'
 import Lightbox from '../components/Lightbox'
-import YouTube from '../components/YouTube'
 import PostCard from '../components/PostCard'
-import { Button, Cta, Eyebrow, PageHeader, SectionHead } from '../components/ui'
+import { Button, Cta, PageHeader, SectionHead } from '../components/ui'
 import { gallery, internationalEvents, moments, portfolioIntro } from '../data/portfolio'
-import { channelUrl, videos } from '../data/videos'
 import { sortedPosts } from '../data/posts'
 import { useSeo } from '../hooks/useSeo'
 
 export default function Portfolio() {
-  useSeo('Work', 'From Cannes to Monaco, Milan to Paris: how BGSE takes athletes beyond the playing field. Gallery, international events, case studies and videos.')
+  useSeo('Work', 'From Cannes to Monaco, Milan to Paris: how BGSE takes athletes beyond the playing field. Gallery, international events, and case studies.')
   const [lb, setLb] = useState<number | null>(null)
   const [lb2, setLb2] = useState<number | null>(null)
   const cases = sortedPosts.filter((p) => ['Events', 'International', 'Activations', 'Culture', 'Brand Launch'].includes(p.category)).slice(0, 6)
@@ -107,30 +105,6 @@ export default function Portfolio() {
         </div>
       </section>
       <Lightbox images={moments} index={lb2} onClose={() => setLb2(null)} onIndex={setLb2} />
-
-      {/* Videos */}
-      <section id="videos" className="scroll-mt-24 bg-ink py-20 text-white sm:py-28">
-        <div className="container-x">
-          <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-            <Reveal>
-              <SectionHead light eyebrow="Video" title="Watch." text="Highlights from the BGSE YouTube channel: ESPYS red carpets, brand launches, community events and behind the scenes." />
-            </Reveal>
-            <Reveal delay={100}>
-              <Button href={channelUrl} variant="outline">
-                YouTube channel
-              </Button>
-            </Reveal>
-          </div>
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {videos.map((v, i) => (
-              <Reveal key={v.id} delay={(i % 3) * 60}>
-                {v.tag && <Eyebrow light className="mb-3">{v.tag}</Eyebrow>}
-                <YouTube id={v.id} title={v.title} />
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <Cta light />
     </>

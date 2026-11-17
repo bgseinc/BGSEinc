@@ -16,7 +16,6 @@ export const site = {
     { label: 'X (Twitter)', href: 'https://twitter.com/BGSportsEntInc', icon: 'x' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/company/bg-sports', icon: 'linkedin' },
     { label: 'Facebook', href: 'https://www.facebook.com/BGSportsEnterprises', icon: 'facebook' },
-    { label: 'YouTube', href: 'https://www.youtube.com/@Bgseinc', icon: 'youtube' },
   ] as const,
   nav: [
     { label: 'Services', to: '/services' },
