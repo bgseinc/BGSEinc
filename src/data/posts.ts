@@ -19,6 +19,7 @@ export type Post = {
   cover?: string
   coverAlt?: string
   coverPosition?: string // CSS object-position for the cover crop, e.g. 'center 15%'
+  coverFit?: 'contain' // show the whole cover (letterboxed) in the post header instead of cropping
   location?: string
   tags?: string[]
   blocks: Block[]
@@ -95,9 +96,10 @@ export const posts: Post[] = [
     tags: ['Super Bowl', 'Radio Row', 'Media Tours', 'Athletes', 'Agents'],
     excerpt:
       'For agents, athletes and managers preparing for Super Bowl week, this is when strategy matters most. VIP itineraries, red carpet access, event production, Radio Row, media tours, appearances and collaborations.',
-    cover: '/images/blog/super-bowl/5-wide.webp',
-    coverAlt: 'TJ Ward and Pat Surtain on the TikTok set during Super Bowl week',
-    coverPosition: 'center 40%',
+    cover: '/images/blog/super-bowl/3.webp',
+    coverAlt: 'Steve Avila during a Super Bowl week media interview',
+    coverPosition: 'center 38%',
+    coverFit: 'contain',
     blocks: [
       {
         type: 'p',
