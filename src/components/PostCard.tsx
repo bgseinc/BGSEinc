@@ -1,7 +1,6 @@
 import Img from './Img'
 import { Link } from 'react-router-dom'
 import type { Post } from '../data/posts'
-import { formatDate } from '../lib/format'
 import { ArrowRight } from './Icons'
 
 export default function PostCard({ post, large = false }: { post: Post; large?: boolean }) {
@@ -21,11 +20,8 @@ export default function PostCard({ post, large = false }: { post: Post; large?: 
         </span>
       </div>
       <div className="mt-5">
-        <p className="text-xs uppercase tracking-[0.18em] text-muted">
-          {formatDate(post.date)}
-          {post.location ? ` · ${post.location}` : ''}
-        </p>
-        <h3 className={`display mt-2 text-ink transition-colors group-hover:text-brand ${large ? 'text-3xl sm:text-4xl' : 'text-2xl sm:text-[1.7rem]'}`}>
+        {post.location && <p className="text-xs uppercase tracking-[0.18em] text-muted">{post.location}</p>}
+        <h3 className={`display ${post.location ? 'mt-2' : ''} text-ink transition-colors group-hover:text-brand ${large ? 'text-3xl sm:text-4xl' : 'text-2xl sm:text-[1.7rem]'}`}>
           {post.title}
         </h3>
         <p className="mt-3 line-clamp-3 text-muted">{post.excerpt}</p>

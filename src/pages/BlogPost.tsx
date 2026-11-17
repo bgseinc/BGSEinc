@@ -6,7 +6,6 @@ import YouTube from '../components/YouTube'
 import PostCard from '../components/PostCard'
 import Reveal from '../components/Reveal'
 import { Button, Cta, Eyebrow } from '../components/ui'
-import { formatDate } from '../lib/format'
 import { ArrowUpRight } from '../components/Icons'
 import { getPost, sortedPosts, type Block } from '../data/posts'
 import { useSeo } from '../hooks/useSeo'
@@ -32,8 +31,7 @@ export default function BlogPost() {
             </Link>
             <div className="mt-8 flex flex-wrap items-center gap-4 text-xs uppercase tracking-[0.18em] text-white/60">
               <span className="bg-brand px-3 py-1 font-display text-xs font-bold text-ink">{post.category}</span>
-              <span>{formatDate(post.date)}</span>
-              {post.location && <span>· {post.location}</span>}
+              {post.location && <span>{post.location}</span>}
             </div>
             <h1 className="display mt-6 max-w-5xl text-[clamp(2.6rem,6.5vw,5.5rem)]">{post.title}</h1>
             <p className="mt-6 max-w-2xl text-lg text-white/70">{post.excerpt}</p>
