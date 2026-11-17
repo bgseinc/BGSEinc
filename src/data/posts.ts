@@ -106,7 +106,7 @@ export const posts: Post[] = [
       { type: 'h2', text: 'What we can do for your week' },
       {
         type: 'p',
-        html: 'From VIP itineraries, red carpet event access, event production, Radio Row and media tours, to appearances and collaborations, we help talent make the most of Super Bowl week.',
+        html: 'From VIP itineraries, red carpet event access, event production, Radio Row and media tours, to appearances and collaborations, we help talent, brands and VIPs make the most of Super Bowl week.',
       },
       {
         type: 'ul',
