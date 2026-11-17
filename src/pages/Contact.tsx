@@ -93,14 +93,14 @@ export default function Contact() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={onSubmit} className="grid gap-6 sm:grid-cols-2">
+              <form onSubmit={onSubmit} className="grid gap-6 border border-line border-t-4 border-t-brand bg-paper-2 p-6 shadow-[0_12px_40px_-20px_rgba(13,23,20,0.25)] sm:grid-cols-2 sm:p-10">
                 <Field label="Name" name="name" required />
                 <Field label="Email" name="email" type="email" required />
                 <Field label="Phone" name="phone" type="tel" />
                 <Field label="Company / Team" name="company" />
                 <label className="sm:col-span-2">
                   <span className="eyebrow text-muted">I am</span>
-                  <select name="role" className="mt-2 w-full border-b border-ink/20 bg-transparent py-3 text-lg outline-none transition-colors focus:border-brand" defaultValue="Athlete">
+                  <select name="role" className="mt-2 w-full border border-ink/15 bg-white px-4 py-3 text-lg outline-none transition-colors focus:border-brand" defaultValue="Athlete">
                     {['Athlete', 'Team or league', 'Brand', 'Agency or partner', 'Media', 'Other'].map((o) => (
                       <option key={o}>{o}</option>
                     ))}
@@ -108,7 +108,7 @@ export default function Contact() {
                 </label>
                 <label className="sm:col-span-2">
                   <span className="eyebrow text-muted">Message</span>
-                  <textarea name="message" required rows={5} className="mt-2 w-full border-b border-ink/20 bg-transparent py-3 text-lg outline-none transition-colors focus:border-brand" />
+                  <textarea name="message" required rows={5} className="mt-2 w-full border border-ink/15 bg-white px-4 py-3 text-lg outline-none transition-colors focus:border-brand" />
                 </label>
                 <input type="text" name="company_website" tabIndex={-1} autoComplete="off" className="hidden" aria-hidden />
                 <div className="sm:col-span-2 flex flex-wrap items-center gap-6">
@@ -133,7 +133,7 @@ function Field({ label, name, type = 'text', required }: { label: string; name: 
         {label}
         {required && <span className="text-brand"> *</span>}
       </span>
-      <input name={name} type={type} required={required} className="mt-2 w-full border-b border-ink/20 bg-transparent py-3 text-lg outline-none transition-colors focus:border-brand" />
+      <input name={name} type={type} required={required} className="mt-2 w-full border border-ink/15 bg-white px-4 py-3 text-lg outline-none transition-colors focus:border-brand" />
     </label>
   )
 }
