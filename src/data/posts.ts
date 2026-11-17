@@ -19,6 +19,7 @@ export type Post = {
   cover?: string
   coverAlt?: string
   coverPosition?: string // CSS object-position for the cover crop, e.g. 'center 15%'
+  coverFit?: 'contain' // show the whole cover (letterboxed) in the post header instead of cropping
   location?: string
   tags?: string[]
   blocks: Block[]
@@ -98,6 +99,7 @@ export const posts: Post[] = [
     cover: '/images/blog/super-bowl/5-wide.webp',
     coverAlt: 'TJ Ward and Pat Surtain on the TikTok set during Super Bowl week',
     coverPosition: 'center 40%',
+    coverFit: 'contain',
     blocks: [
       {
         type: 'p',

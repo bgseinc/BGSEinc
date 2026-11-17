@@ -43,7 +43,7 @@ export default function BlogPost() {
         {post.cover && !coverIsRemote && (
           <div className="bg-ink">
             <div className="container-x">
-              <Img src={post.cover} alt={post.coverAlt ?? ''} loading="eager" sizes="100vw" className="max-h-[80vh] w-full object-cover" style={post.coverPosition ? { objectPosition: post.coverPosition } : undefined} />
+              <Img src={post.cover} alt={post.coverAlt ?? ''} loading="eager" sizes="100vw" className={`max-h-[80vh] w-full ${post.coverFit === 'contain' ? 'object-contain' : 'object-cover'}`} style={post.coverPosition ? { objectPosition: post.coverPosition } : undefined} />
             </div>
           </div>
         )}
