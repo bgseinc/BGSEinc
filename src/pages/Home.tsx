@@ -100,7 +100,7 @@ export default function Home() {
       </div>
 
       {/* WHY BGSE */}
-      <section className="bg-paper py-20 sm:py-28">
+      <section className="bg-paper-2 py-20 sm:py-28">
         <div className="container-x grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Reveal>
@@ -130,9 +130,9 @@ export default function Home() {
               </Link>
             </Reveal>
           </div>
-          <div className="grid gap-px bg-line sm:grid-cols-2 lg:col-span-7">
+          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-7">
             {pillars.map((p, i) => (
-              <Reveal key={p.n} delay={i * 80} className="group bg-paper p-8 transition-colors duration-500 hover:bg-ink hover:text-white sm:p-10">
+              <Reveal key={p.n} delay={i * 80} className="group border-t-4 border-brand bg-white p-8 shadow-[0_1px_2px_rgba(13,23,20,0.06),0_12px_32px_-16px_rgba(13,23,20,0.18)] transition-colors duration-500 hover:bg-ink hover:text-white sm:p-10">
                 <p className="font-display text-sm font-semibold tracking-[0.2em] text-brand">{p.n}</p>
                 <h3 className="display mt-6 text-3xl">{p.title}</h3>
                 <p className="mt-4 text-muted transition-colors group-hover:text-white/70">{p.text}</p>
